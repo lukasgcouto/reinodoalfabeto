@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Offer facts (price, activity count, guarantee, checkout link) live only in `src/lib/offer.ts`; landing components read from it so one edit updates every section and button.
+- Landing page sections live in `src/components/landing/`, composed by `src/routes/index.tsx`; styling uses the toy-box tokens/utilities in `src/styles.css`.

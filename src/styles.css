@@ -1,9 +1,6 @@
 /*
  * Tailwind v4 entry: config lives here, with no tailwind.config.js or PostCSS plugin.
- * - Keep every @import in this top block, above @theme and the rest of the file. Install an
- *   npm package before @importing its CSS. Never @import a remote URL (web fonts, CDN CSS): the
- *   build resolves @import from the filesystem. Load those with a <link> in the head() of
- *   src/routes/__root.tsx and name the family in a --font-* token in @theme inline below.
+ * Keep every @import in this top block. Web fonts load via <link> in src/routes/__root.tsx.
  */
 @import "tailwindcss" source(none);
 @source "../src";
@@ -12,24 +9,14 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system definition.
- *
- * The design lives in this file: oklch color tokens on the shadcn variables
- * (--background, --foreground, --primary, --secondary, --muted, --accent, ...) plus
- * new tokens as needed, font tokens, and custom styles and animations.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+ * Design system: "Reino do Alfabeto" — toy-box 3D cartoon look.
+ * Sky blue, sunshine yellow, cherry red, royal blue, leaf green CTAs, wooden signs.
  */
 
 @theme inline {
+  --font-display: "Baloo 2", "Nunito", system-ui, sans-serif;
+  --font-sans: "Nunito", system-ui, sans-serif;
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -57,99 +44,187 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+
+  --color-sky: var(--sky);
+  --color-sky-deep: var(--sky-deep);
+  --color-sun: var(--sun);
+  --color-sun-deep: var(--sun-deep);
+  --color-cherry: var(--cherry);
+  --color-cherry-deep: var(--cherry-deep);
+  --color-royal: var(--royal);
+  --color-royal-deep: var(--royal-deep);
+  --color-leaf: var(--leaf);
+  --color-leaf-deep: var(--leaf-deep);
+  --color-grass: var(--grass);
+  --color-wood: var(--wood);
+  --color-wood-deep: var(--wood-deep);
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-on-color: var(--on-color);
+
+  --animate-float: float 5s ease-in-out infinite;
+  --animate-wiggle: wiggle 3s ease-in-out infinite;
+  --animate-pulse-cta: pulse-cta 2.2s ease-in-out infinite;
+  --animate-drift: drift 40s linear infinite;
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
-}
+  --radius: 1.25rem;
 
-.dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+  --sky: oklch(0.82 0.11 228);
+  --sky-deep: oklch(0.68 0.15 240);
+  --sun: oklch(0.88 0.18 92);
+  --sun-deep: oklch(0.76 0.17 72);
+  --cherry: oklch(0.6 0.23 27);
+  --cherry-deep: oklch(0.47 0.2 27);
+  --royal: oklch(0.47 0.2 262);
+  --royal-deep: oklch(0.34 0.17 264);
+  --leaf: oklch(0.64 0.2 145);
+  --leaf-deep: oklch(0.47 0.16 147);
+  --grass: oklch(0.78 0.18 135);
+  --wood: oklch(0.52 0.1 50);
+  --wood-deep: oklch(0.38 0.08 45);
+  --cream: oklch(0.985 0.02 95);
+  --ink: oklch(0.27 0.08 262);
+  --on-color: oklch(1 0 0);
+
+  --background: oklch(0.985 0.015 220);
+  --foreground: var(--ink);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--ink);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--ink);
+  --primary: var(--leaf);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: var(--royal);
+  --secondary-foreground: oklch(1 0 0);
+  --muted: oklch(0.95 0.025 220);
+  --muted-foreground: oklch(0.45 0.06 255);
+  --accent: var(--sun);
+  --accent-foreground: var(--ink);
+  --destructive: var(--cherry);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.88 0.04 230);
+  --input: oklch(0.88 0.04 230);
+  --ring: var(--royal);
+
+  --gradient-sky: linear-gradient(180deg, oklch(0.74 0.14 238) 0%, oklch(0.86 0.09 222) 55%, oklch(0.94 0.05 200) 100%);
+  --gradient-meadow: linear-gradient(180deg, oklch(0.86 0.17 130) 0%, oklch(0.7 0.19 140) 100%);
+  --gradient-wood: linear-gradient(180deg, oklch(0.58 0.11 52) 0%, oklch(0.48 0.1 48) 100%);
+  --gradient-sunny: linear-gradient(180deg, oklch(0.93 0.15 95) 0%, oklch(0.86 0.18 85) 100%);
+  --gradient-royal: linear-gradient(180deg, oklch(0.55 0.2 258) 0%, oklch(0.42 0.2 264) 100%);
+  --shadow-toy: 0 6px 0 0 var(--royal-deep), 0 18px 30px -12px color-mix(in oklab, var(--royal-deep) 50%, transparent);
+  --shadow-card: 0 4px 0 0 var(--border), 0 22px 40px -20px color-mix(in oklab, var(--royal) 35%, transparent);
 }
 
 @layer base {
   * {
     border-color: var(--color-border);
   }
-
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+/* White chunky toy lettering with a colored outline, like the kit cover */
+@utility text-toy {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--on-color);
+  -webkit-text-stroke: 0.14em var(--cherry);
+  paint-order: stroke fill;
+  text-shadow: 0 0.09em 0 var(--cherry-deep);
+}
+@utility text-toy-royal {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--on-color);
+  -webkit-text-stroke: 0.14em var(--royal);
+  paint-order: stroke fill;
+  text-shadow: 0 0.09em 0 var(--royal-deep);
+}
+@utility text-sunny {
+  color: var(--sun);
+  -webkit-text-stroke: 0.1em var(--royal-deep);
+  paint-order: stroke fill;
+}
+
+@utility bg-sky-gradient {
+  background-image: var(--gradient-sky);
+}
+@utility bg-meadow {
+  background-image: var(--gradient-meadow);
+}
+@utility bg-wood {
+  background-image: var(--gradient-wood);
+}
+@utility bg-sunny {
+  background-image: var(--gradient-sunny);
+}
+@utility bg-royal-gradient {
+  background-image: var(--gradient-royal);
+}
+@utility shadow-toy {
+  box-shadow: var(--shadow-toy);
+}
+@utility shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+/* Wooden sign with plank lines */
+@utility wood-sign {
+  background-image:
+    repeating-linear-gradient(180deg, transparent 0 30%, color-mix(in oklab, var(--wood-deep) 55%, transparent) 30% 32%),
+    var(--gradient-wood);
+  border: 4px solid var(--wood-deep);
+  box-shadow: 0 6px 0 0 var(--wood-deep), 0 16px 30px -12px color-mix(in oklab, var(--wood-deep) 70%, transparent);
+}
+
+/* Puffy cloud bubble */
+@utility cloud {
+  background: var(--on-color);
+  border-radius: 999px;
+  box-shadow:
+    inset 0 -6px 0 color-mix(in oklab, var(--sky) 35%, transparent),
+    0 12px 30px -14px color-mix(in oklab, var(--sky-deep) 70%, transparent);
+}
+
+/* Dotted notebook paper */
+@utility paper-dots {
+  background-color: var(--cream);
+  background-image: radial-gradient(color-mix(in oklab, var(--sky-deep) 22%, transparent) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+@keyframes pulse-cta {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.035); }
+}
+@keyframes drift {
+  from { transform: translateX(-20%); }
+  to { transform: translateX(120vw); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float, .animate-wiggle, .animate-pulse-cta, .animate-drift {
+    animation: none !important;
   }
 }

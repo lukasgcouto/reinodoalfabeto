@@ -1,0 +1,75 @@
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { OFFER } from "@/lib/offer";
+import { SectionTitle } from "./Decor";
+
+const faqs: { q: string; a: string[] }[] = [
+  {
+    q: "Meu filho não para quieto para estudar. Isso vai funcionar?",
+    a: [
+      "Essa é uma das dúvidas mais comuns, e é justamente por isso que o material foi criado do jeito que foi.",
+      "Crianças agitadas costumam se dispersar com páginas cheias de elementos, cores e desenhos competindo entre si. No Alfabetização Sem Segredo, cada página tem visual limpo, lúdico e sem distrações, o que ajuda a manter o foco naturalmente. As atividades são curtas e objetivas, então ele não precisa ficar sentado por muito tempo.",
+      `Nenhum material faz milagre, e cada criança tem seu ritmo. Mas um visual leve e atividades rápidas deixam tudo muito mais fácil, e você tem ${OFFER.guaranteeDays} dias de garantia para testar.`,
+    ],
+  },
+  {
+    q: "Eu não sei como ensinar meu filho a ler. Vou conseguir aplicar?",
+    a: [
+      "Sim. Você não precisa saber nada de pedagogia.",
+      "O guia é organizado passo a passo, por níveis de evolução. Você começa pelo primeiro nível e segue a sequência, sem se perguntar “e agora, o que vem depois?”. As atividades são claras e fáceis de aplicar.",
+      "Seu papel é sentar ao lado, incentivar e comemorar cada conquista. O material faz o resto.",
+    ],
+  },
+  {
+    q: "Eu não tenho tempo. Como encaixar isso na minha rotina?",
+    a: [
+      `Basta ${OFFER.minutesPerDay} minutos por dia.`,
+      "Como tudo já vem pronto para imprimir, você não gasta tempo planejando, pesquisando ou montando material. É imprimir, sentar e aplicar. Dá para fazer depois do lanche, antes do banho ou num intervalo da rotina.",
+      "Pouco tempo, mas com constância e direção, rende muito mais do que horas de estudo sem método.",
+    ],
+  },
+  {
+    q: "Como recebo o material? Preciso esperar?",
+    a: [
+      "Não precisa esperar. O acesso é imediato.",
+      "Assim que a compra for confirmada, você recebe o material no seu e-mail e no WhatsApp. É um guia digital em PDF, então você pode baixar, salvar e imprimir quantas vezes quiser. O acesso é vitalício.",
+    ],
+  },
+  {
+    q: "Serve para professores também?",
+    a: [
+      "Sim! Professores alfabetizadores usam o material como fonte de atividades lúdicas e organizadas por nível, prontas para imprimir e aplicar com a turma ou em reforço individual.",
+    ],
+  },
+  {
+    q: "E se eu não gostar?",
+    a: [
+      `Você tem ${OFFER.guaranteeDays} dias de garantia incondicional. Se não fizer sentido para você, é só pedir o reembolso. Sem complicação.`,
+    ],
+  },
+];
+
+export function Faq() {
+  return (
+    <section className="paper-dots px-4 py-20 md:py-28">
+      <SectionTitle kicker="Dúvidas" title="Perguntas frequentes" />
+      <Accordion type="single" collapsible className="mx-auto mt-10 max-w-3xl space-y-4">
+        {faqs.map((f, i) => (
+          <AccordionItem
+            key={f.q}
+            value={`item-${i}`}
+            className="rounded-3xl border-4 border-border bg-card px-5 shadow-card data-[state=open]:border-royal"
+          >
+            <AccordionTrigger className="font-display text-lg font-extrabold text-royal-deep hover:no-underline md:text-xl">
+              {f.q}
+            </AccordionTrigger>
+            <AccordionContent className="space-y-3 text-base leading-relaxed text-ink">
+              {f.a.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </section>
+  );
+}
