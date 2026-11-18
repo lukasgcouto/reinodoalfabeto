@@ -25,10 +25,10 @@ export function Offer() {
           <img
             src={media.logo}
             alt="Reino do Alfabeto"
-            width={440}
-            height={346}
+            width={286}
+            height={236}
             loading="lazy"
-            className="mx-auto w-48 rounded-3xl border-4 border-on-color shadow-card"
+            className="mx-auto h-auto w-48 rounded-lg border-4 border-on-color shadow-card"
           />
           <h2 className="mt-6 text-4xl font-extrabold leading-tight text-royal-deep md:text-5xl">
             Tudo o que você recebe hoje

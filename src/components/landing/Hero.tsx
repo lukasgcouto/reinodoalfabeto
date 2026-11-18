@@ -16,9 +16,9 @@ export function Hero() {
         <img
           src={media.logo}
           alt="Reino do Alfabeto"
-          width={440}
-          height={346}
-          className="h-16 w-auto rounded-2xl border-4 border-on-color shadow-card md:h-20"
+          width={286}
+          height={236}
+          className="h-auto w-28 rounded-lg border-4 border-on-color shadow-card md:w-36"
         />
         <a
           href={OFFER.checkoutUrl}
@@ -37,10 +37,10 @@ export function Hero() {
             </p>
           </div>
 
-          <h1 className="mt-6 text-[2.1rem] font-extrabold leading-[1.08] text-royal-deep md:text-[3.4rem]">
+          <h1 className="mt-6 text-[2.1rem] font-extrabold leading-[1.2] text-royal-deep md:text-[3.4rem]">
             <span className="text-toy text-[1.15em] leading-none">{OFFER.activityCount} atividades</span>{" "}
             prontas para imprimir que transformam{" "}
-            <span className="whitespace-nowrap rounded-2xl bg-sun px-2 shadow-[0_5px_0_0_var(--sun-deep)]">
+            <span className="my-2 inline-block max-w-full rounded-2xl bg-sun px-2 py-1 align-middle leading-[1.2] shadow-[0_5px_0_0_var(--sun-deep)]">
               {OFFER.minutesPerDay} minutos por dia
             </span>{" "}
             em leitura de verdade
