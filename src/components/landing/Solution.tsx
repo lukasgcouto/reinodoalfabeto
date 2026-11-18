@@ -106,10 +106,12 @@ export function Solution() {
           <p className="text-center font-display text-2xl font-extrabold text-royal-deep md:text-3xl">
             Veja como são as páginas por dentro
           </p>
-          <div className="mt-8 grid grid-cols-2 gap-4 md:gap-10">
+          <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
             {[
               { src: media.ligue, alt: "Atividade ligue cada desenho à palavra correspondente", r: "-rotate-2" },
               { src: media.silabas, alt: "Atividade complete as palavras com as sílabas", r: "rotate-2" },
+              { src: media.recorte, alt: "Atividade recorte e cole as palavras dos meios de transporte", r: "rotate-1" },
+              { src: media.vogais, alt: "Atividade complete os nomes dos animais com as vogais", r: "-rotate-1" },
             ].map((img) => (
               <figure key={img.src} className={`relative ${img.r}`}>
                 <span className="absolute -top-3 left-1/2 z-10 h-6 w-20 -translate-x-1/2 rotate-3 rounded-sm bg-sun/80" />
