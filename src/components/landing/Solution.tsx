@@ -114,7 +114,6 @@ export function Solution() {
               { src: media.vogais, alt: "Atividade complete os nomes dos animais com as vogais", r: "-rotate-1" },
             ].map((img) => (
               <figure key={img.src} className={`relative ${img.r}`}>
-                <span className="absolute -top-3 left-1/2 z-10 h-6 w-20 -translate-x-1/2 rotate-3 rounded-sm bg-sun/80" />
                 <img
                   src={img.src}
                   alt={img.alt}

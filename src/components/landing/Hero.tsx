@@ -101,7 +101,7 @@ export function Hero() {
             />
           </div>
 
-          <div className="absolute -bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-1 whitespace-nowrap rounded-full bg-sun px-4 py-2 font-display text-sm font-extrabold text-ink shadow-[0_4px_0_0_var(--sun-deep)]">
+          <div className="relative z-20 mx-auto mt-6 flex w-fit items-center gap-1 whitespace-nowrap rounded-full bg-sun px-4 py-2 font-display text-sm font-extrabold text-ink shadow-[0_4px_0_0_var(--sun-deep)]">
             {[0, 1, 2, 3, 4].map((i) => (
               <Star key={i} className="size-4 fill-cherry text-cherry" />
             ))}
