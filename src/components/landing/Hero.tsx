@@ -38,12 +38,13 @@ export function Hero() {
           </div>
 
           <h1 className="mt-6 text-[2.1rem] font-extrabold leading-[1.1] text-royal-deep md:text-[3.4rem]">
-            <span className="text-toy text-[1.15em] leading-none">{OFFER.activityCount}&nbsp;Atividades</span>{"\u00a0"}<br />
-            Prontas Para Imprimir Que Transformam{" "}
+            <span className="text-toy text-[1.15em] leading-none">{`${OFFER.activityCount}\u00a0Atividades\u00a0`}</span>
+            <br />
+            {"Prontas Para Imprimir Que Transformam "}
             <span className="my-2 inline-block max-w-full rounded-2xl bg-sun px-2 py-1 align-middle leading-[1.2] shadow-[0_5px_0_0_var(--sun-deep)]">
-              {OFFER.minutesPerDay}&nbsp;Minutos Por Dia
-            </span>{"\u00a0"}
-            Em Leitura de Verdade
+              {`${OFFER.minutesPerDay}\u00a0Minutos Por Dia`}
+            </span>
+            {"\u00a0Em Leitura de Verdade"}
           </h1>
 
           <p className="mx-auto mt-6 max-w-xl rounded-3xl bg-on-color/85 p-5 text-base font-semibold leading-relaxed text-ink shadow-card backdrop-blur md:mx-0 md:text-lg">
