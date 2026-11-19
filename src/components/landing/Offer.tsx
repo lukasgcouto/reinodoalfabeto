@@ -5,7 +5,7 @@ import { CloudShape, Hills } from "./Decor";
 import { media } from "./media";
 
 const items = [
-  `${OFFER.activityCount} atividades de alfabetização cuidadosamente selecionadas`,
+  `+${OFFER.activityCount} atividades de alfabetização cuidadosamente selecionadas`,
   "Organização por níveis de evolução, do zero até a leitura de palavras e frases",
   "Design limpo e de alta qualidade estética, sem poluição visual",
   "Pronto para imprimir: use em casa ou na sala de aula, quantas vezes quiser",
@@ -39,7 +39,7 @@ export function Offer() {
           <div className="flex items-center gap-3 rounded-2xl bg-muted p-4">
             <BookOpen className="size-8 shrink-0 text-royal" />
             <p className="font-display text-lg font-extrabold text-royal-deep md:text-xl">
-              Guia Completo Digital em PDF: Alfabetização Sem Segredo
+              Material Completo Digital em PDF: Alfabetização Sem Segredo
             </p>
           </div>
           <ul className="mt-6 space-y-3">

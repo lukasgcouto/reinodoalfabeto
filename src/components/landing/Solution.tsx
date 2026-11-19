@@ -36,7 +36,8 @@ export function Solution() {
     <section className="bg-background px-4 py-20 md:py-28">
       <SectionTitle kicker="Conheça" title={<>Alfabetização Sem Segredo</>} />
       <p className="mx-auto mt-5 max-w-2xl text-center text-lg leading-relaxed text-ink">
-        Um guia completo em PDF com <strong>{OFFER.activityCount} atividades</strong> de alfabetização
+        Um material completo em PDF com mais de{"\u00a0"}
+        <strong>{OFFER.activityCount} atividades</strong> de alfabetização
         selecionadas, organizadas em níveis de evolução. A criança sai do zero e avança, degrau por degrau, até a
         leitura de palavras e frases.
       </p>

@@ -15,7 +15,11 @@ export function CtaButton({
   return (
     <Button asChild variant="cta" size="xl" className={cn(pulse && "animate-pulse-cta", className)}>
       <a href={OFFER.checkoutUrl}>
-        {children ?? `Quero meu kit por ${formatBRL(OFFER.priceCents)}`}
+        {children ?? (
+          <span className="whitespace-pre-line text-center">
+            {`QUERO MEU KIT POR\n${formatBRL(OFFER.priceCents)}`}
+          </span>
+        )}
         <ArrowRight />
       </a>
     </Button>
