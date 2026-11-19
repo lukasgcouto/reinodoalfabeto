@@ -1,4 +1,5 @@
 # Roadmap
+- [x] Redesenhar exclusivamente a primeira dobra e comparar as demais seções com a versão original
 - [x] Refinar profundidade e acabamento editorial do mockup, preservando a primeira dobra e verificando celular e computador
 - [x] Refinar destaques uniformes, CTA curto e confiança logo abaixo do preço na primeira dobra
 - [x] Reestruturar a primeira dobra com mockup da capa enviada e destaque mobile para produto, título e botão

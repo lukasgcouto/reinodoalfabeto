@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="overflow-x-hidden">
-      <div className="bg-cherry px-4 py-2 text-center font-display text-sm font-extrabold text-on-color md:text-base">
+      <div className="hero-promo bg-cherry px-4 py-2 text-center font-display text-sm font-extrabold text-on-color md:text-base">
         {"\u00a0"}Oferta de hoje: de <s className="opacity-80">{formatBRL(OFFER.originalPriceCents)}</s> por apenas{" "}
         <span className="text-sun">{formatBRL(OFFER.priceCents)}</span>
       </div>

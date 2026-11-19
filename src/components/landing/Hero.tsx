@@ -7,22 +7,22 @@ import { ProductMockup } from "./ProductMockup";
 export function Hero() {
   return (
     <section className="editorial-hero">
-      <header className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-2 md:px-8 md:py-4">
+      <header className="hero-header mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-2 md:px-8 md:py-4">
         <div className="flex min-w-0 items-center gap-2">
           <img src={media.logo} alt="" width={600} height={600} className="size-10 shrink-0 object-contain md:size-16" />
           <p className="whitespace-nowrap font-display text-sm font-extrabold text-royal-deep sm:text-lg md:text-2xl">Reino do Alfabeto</p>
         </div>
-        <span className="flex shrink-0 items-center gap-1 text-xs font-bold text-royal md:text-sm"><BookOpen className="size-4" />PDF digital</span>
+        <span className="hero-format flex shrink-0 items-center gap-1 text-xs font-bold text-royal md:text-sm"><BookOpen className="size-4" />PDF digital</span>
       </header>
       <div className="hero-editorial-layout mx-auto max-w-6xl px-4 md:px-8">
         <div className="hero-heading text-center md:text-left">
-          <p className="mb-2 text-xs font-extrabold text-royal md:mb-4 md:text-sm">O caminho completo para alfabetizar sem segredo!</p>
+          <p className="hero-eyebrow mb-2 text-xs font-extrabold text-royal md:mb-4 md:text-sm">O caminho completo para alfabetizar sem segredo!</p>
           <h1 className="hero-editorial-title">
             <span className="hero-title-intro">
               {"O Passo a Passo em "}
               <span className="hero-key-highlight">{`${OFFER.levelCount} Níveis`}</span>
             </span>
-            {" "}<span className="hero-title-outcome">Para Seu Filho Sair do Zero à Leitura de Frases</span>{" "}
+            {" "}<span className="hero-title-outcome">{"Para Seu Filho Sair do Zero à "}<span className="hero-title-reading">Leitura de Frases</span></span>{" "}
             <span className="hero-title-cadence">
               {"em "}<span className="hero-key-highlight">{`${OFFER.minutesPerDay} Minutos Por Dia`}</span>
             </span>
