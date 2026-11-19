@@ -23,9 +23,9 @@ export function Closing() {
             <p className="font-bold">Imagine esta cena.</p>
             <p>
               Seu filho, sentado à mesa, com o lápis na mão e um sorrisinho orgulhoso no rosto. Ele olha para uma
-              palavra e, devagar, lê.
+              palavra e, devagar, lê sozinho.
             </p>
-            <p className="font-display text-4xl font-extrabold text-cherry">Sozinho.</p>
+            <p className="font-display text-4xl font-extrabold text-cherry"></p>
             <p>E você, ao lado dele, com aquele nó no peito se transformando em orgulho.</p>
             <p>
               Essa cena não depende de mágica nem de você virar professora. Ela começa com um passo simples: dar a
