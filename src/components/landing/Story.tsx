@@ -5,7 +5,7 @@ import { media } from "./media";
 
 export function Story() {
   return (
-    <section className="bg-leaf">
+    <section className="bg-cream">
       <div className="paper-dots rounded-t-[3rem] px-4 py-16 md:py-24">
         <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
           <div className="relative order-2 md:order-1">
