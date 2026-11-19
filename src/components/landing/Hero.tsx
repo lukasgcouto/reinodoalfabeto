@@ -18,7 +18,7 @@ export function Hero() {
           alt="Reino do Alfabeto"
           width={600}
           height={600}
-          className="h-auto w-20 drop-shadow-lg md:w-28"
+          className="h-auto w-20 rounded-2xl shadow-card md:w-28"
         />
         <a
           href={OFFER.checkoutUrl}

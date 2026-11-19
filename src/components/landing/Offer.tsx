@@ -28,7 +28,7 @@ export function Offer() {
             width={600}
             height={600}
             loading="lazy"
-            className="mx-auto h-auto w-48 drop-shadow-lg"
+            className="mx-auto h-auto w-48 rounded-2xl shadow-card"
           />
           <h2 className="mt-6 text-4xl font-extrabold leading-tight text-royal-deep md:text-5xl">
             Tudo o que você recebe hoje
