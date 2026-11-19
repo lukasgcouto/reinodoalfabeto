@@ -33,3 +33,4 @@ use the editor.
 - Offer facts (price, activity count, guarantee, checkout link) live only in `src/lib/offer.ts`; landing components read from it so one edit updates every section and button.
 - Landing page sections live in `src/components/landing/`, composed by `src/routes/index.tsx`; styling uses the toy-box tokens/utilities in `src/styles.css`.
 - Testimonials use two equal CSS marquee groups for a seamless loop, with pointer/hover pause and a static scrollable reduced-motion alternative.
+- The hero product mockup preserves the uploaded cover pixels using CSS perspective; its grid places the title, product and CTA before supporting copy on mobile.
