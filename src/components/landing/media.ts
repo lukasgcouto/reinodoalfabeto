@@ -1,4 +1,4 @@
-import logo from "@/assets/logo-reino-do-alfabeto-inteira.png.asset.json";
+import logo from "@/assets/logo-reino-do-alfabeto-recortada.png.asset.json";
 import kids from "@/assets/criancas-abc.png.asset.json";
 import ligue from "@/assets/atividade-ligue-palavras.png.asset.json";
 import silabas from "@/assets/atividade-silabas.png.asset.json";
