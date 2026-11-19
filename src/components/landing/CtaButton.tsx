@@ -40,7 +40,7 @@ export function TrustLine({ className }: { className?: string }) {
       )}
     >
       {items.map(({ icon: Icon, label }) => (
-        <li key={label} className="flex items-center gap-1.5">
+        <li key={label} className="flex items-center justify-center gap-1.5 text-center">
           <Icon className="size-4 text-leaf" />
           {label}
         </li>
