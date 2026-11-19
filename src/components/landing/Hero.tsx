@@ -18,7 +18,7 @@ export function Hero() {
         <div className="hero-heading text-center md:text-left">
           <p className="mb-2 text-xs font-extrabold text-royal md:mb-4 md:text-sm">O caminho completo para alfabetizar sem segredo!</p>
           <h1 className="text-[1.375rem] font-extrabold leading-[1.15] text-royal-deep md:text-[2.75rem] md:leading-[1.15]">
-            {"O Caminho Passo a Passo em "}
+            {"O Passo a Passo em "}
             <span className="hero-key-highlight">{`${OFFER.levelCount} Níveis`}</span>
             {" Para Seu Filho Sair do Zero à Leitura de Frases em "}
             <span className="hero-key-highlight">
