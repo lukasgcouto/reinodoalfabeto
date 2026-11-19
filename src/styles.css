@@ -308,6 +308,13 @@
   .product-sheet { width: 210px; top: 110px; right: 2%; }
   .product-sheet-back { top: 80px; right: 0; }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-heading h1 { font-size: 2rem; }
+  .product-scene { height: 360px; }
+  .product-book { width: 65%; }
+  .product-sheet { width: 48%; top: 85px; }
+  .product-sheet-back { top: 65px; }
+}
 
 .testimonials-window {
   overflow: hidden;
