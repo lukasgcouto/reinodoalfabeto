@@ -17,12 +17,14 @@ export function Hero() {
       <div className="hero-editorial-layout mx-auto max-w-6xl px-4 md:px-8">
         <div className="hero-heading text-center md:text-left">
           <p className="mb-2 text-xs font-extrabold text-royal md:mb-4 md:text-sm">O caminho completo para alfabetizar sem segredo!</p>
-          <h1 className="text-[1.375rem] font-extrabold leading-[1.15] text-royal-deep md:text-[2.75rem] md:leading-[1.15]">
-            {"O Passo a Passo em "}
-            <span className="hero-key-highlight">{`${OFFER.levelCount} Níveis`}</span>
-            {" Para Seu Filho Sair do Zero à Leitura de Frases em "}
-            <span className="hero-key-highlight">
-              {`${OFFER.minutesPerDay} Minutos Por Dia`}
+          <h1 className="hero-editorial-title">
+            <span className="hero-title-intro">
+              {"O Passo a Passo em "}
+              <span className="hero-key-highlight">{`${OFFER.levelCount} Níveis`}</span>
+            </span>
+            {" "}<span className="hero-title-outcome">Para Seu Filho Sair do Zero à Leitura de Frases</span>{" "}
+            <span className="hero-title-cadence">
+              {"em "}<span className="hero-key-highlight">{`${OFFER.minutesPerDay} Minutos Por Dia`}</span>
             </span>
           </h1>
         </div>
