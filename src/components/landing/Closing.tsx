@@ -53,7 +53,7 @@ export function Closing() {
 
         <div className="mt-10 flex flex-col items-center gap-4">
           <CtaButton className="w-full max-w-2xl">
-            Sim, quero começar hoje por {formatBRL(OFFER.priceCents)}
+            Quero destravar a leitura do meu filho
           </CtaButton>
           <TrustLine />
         </div>

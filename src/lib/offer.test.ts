@@ -17,4 +17,15 @@ describe("offer", () => {
   it("has a 7-day guarantee", () => {
     expect(OFFER.guaranteeDays).toBe(7);
   });
+  it("organizes the method in five levels", () => {
+    expect(OFFER.levelCount).toBe(5);
+  });
+  it("includes the parents guide free instead of R$ 29,00", () => {
+    expect(OFFER.bonuses[0].originalPriceCents).toBe(2900);
+    expect(OFFER.bonuses[0].priceCents).toBe(0);
+  });
+  it("includes reading sheets and wall alphabet free instead of R$ 37,00", () => {
+    expect(OFFER.bonuses[1].originalPriceCents).toBe(3700);
+    expect(OFFER.bonuses[1].priceCents).toBe(0);
+  });
 });

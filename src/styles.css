@@ -132,7 +132,7 @@
   }
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
   }
 }
 
@@ -227,4 +227,40 @@
   .animate-float, .animate-wiggle, .animate-pulse-cta, .animate-drift {
     animation: none !important;
   }
+}
+
+.testimonials-window {
+  overflow: hidden;
+  container-type: inline-size;
+  padding-bottom: 24px;
+}
+.testimonials-track {
+  display: flex;
+  width: max-content;
+  animation: testimonials-scroll 100s linear infinite;
+}
+.testimonials-group {
+  display: flex;
+  gap: 24px;
+  padding-right: 24px;
+}
+.testimonial-card {
+  width: 85vw;
+  flex: 0 0 auto;
+}
+.testimonials-window:hover .testimonials-track,
+.testimonials-window:focus-within .testimonials-track,
+.testimonials-window[data-paused="true"] .testimonials-track {
+  animation-play-state: paused;
+}
+@keyframes testimonials-scroll {
+  to { transform: translateX(-50%); }
+}
+@media (min-width: 768px) {
+  .testimonial-card { width: calc((100cqw - 48px) / 3); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .testimonials-track { animation: none; }
+  .testimonials-window { overflow-x: auto; }
+  .testimonials-group[aria-hidden="true"] { display: none; }
 }

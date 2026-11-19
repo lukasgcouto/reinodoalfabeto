@@ -3,6 +3,7 @@ import { OFFER } from "@/lib/offer";
 import { CtaButton } from "./CtaButton";
 import { SectionTitle } from "./Decor";
 import { media } from "./media";
+import { Testimonials } from "./Testimonials";
 
 const levels = [
   { label: "Letras", tone: "bg-sun text-ink shadow-[0_6px_0_0_var(--sun-deep)]" },
@@ -127,6 +128,8 @@ export function Solution() {
             ))}
           </div>
         </div>
+
+        <Testimonials />
 
         <p className="mx-auto mt-12 max-w-2xl text-center text-xl font-bold leading-relaxed text-ink">
           O resultado é uma alfabetização <span className="text-leaf-deep">mais rápida</span>,{" "}

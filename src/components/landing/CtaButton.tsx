@@ -13,13 +13,11 @@ export function CtaButton({
   pulse?: boolean;
 }) {
   return (
-    <Button asChild variant="cta" size="xl" className={cn(pulse && "animate-pulse-cta", className)}>
+    <Button asChild variant="cta" size="xl" className={cn("max-w-full min-w-0 tracking-normal", pulse && "animate-pulse-cta", className)}>
       <a href={OFFER.checkoutUrl}>
-        {children ?? (
-          <span className="whitespace-pre-line text-center">
-            {`QUERO MEU KIT POR\n${formatBRL(OFFER.priceCents)}`}
-          </span>
-        )}
+        <span className="min-w-0 whitespace-normal text-center">
+          {children ?? `Garantir meu acesso por ${formatBRL(OFFER.priceCents)}`}
+        </span>
         <ArrowRight />
       </a>
     </Button>
@@ -41,7 +39,7 @@ export function TrustLine({ className }: { className?: string }) {
     >
       {items.map(({ icon: Icon, label }) => (
         <li key={label} className="flex items-center justify-center gap-1.5 text-center">
-          <Icon className="size-4 text-leaf" />
+          <Icon className="size-4 shrink-0 text-leaf" />
           {label}
         </li>
       ))}

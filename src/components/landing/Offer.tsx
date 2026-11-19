@@ -1,4 +1,4 @@
-import { BookOpen, CheckCircle2 } from "lucide-react";
+import { BookOpen, CheckCircle2, Gift } from "lucide-react";
 import { OFFER, centsPerActivity, discountPercent, formatBRL } from "@/lib/offer";
 import { CtaButton, TrustLine } from "./CtaButton";
 import { CloudShape, Hills } from "./Decor";
@@ -51,6 +51,25 @@ export function Offer() {
             ))}
           </ul>
 
+          <div className="mt-8 border-y-4 border-dashed border-sun py-6">
+            <h3 className="flex items-center justify-center gap-2 text-center text-2xl font-extrabold leading-tight text-royal-deep">
+              <Gift className="size-7 shrink-0 text-cherry" />
+              Presentes Exclusivos Garantidos Hoje (Grátis)
+            </h3>
+            <div className="mt-6 grid gap-6 md:grid-cols-2">
+              {OFFER.bonuses.map((bonus, i) => (
+                <article key={bonus.title} className="min-w-0">
+                  <p className="font-display font-extrabold text-cherry">Bônus {i + 1}</p>
+                  <h4 className="mt-1 text-xl font-extrabold leading-tight text-royal-deep">{bonus.title}</h4>
+                  <p className="mt-3 leading-relaxed text-ink">{bonus.description}</p>
+                  <p className="mt-3 font-bold text-muted-foreground">
+                    De <s>{formatBRL(bonus.originalPriceCents)}</s> por <strong className="text-leaf-deep">Grátis</strong>
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+
           <div className="mt-8 rounded-3xl bg-muted p-5 text-center">
             <p className="font-display text-xl font-extrabold text-royal-deep">
               Quanto vale ver seu filho lendo com leveza?
@@ -82,7 +101,7 @@ export function Offer() {
 
           <div className="mt-8 flex flex-col items-center gap-4">
             <CtaButton className="w-full">
-              Quero acessar o Alfabetização Sem Segredo agora por {formatBRL(OFFER.priceCents)}
+              Garantir meu acesso por {formatBRL(OFFER.priceCents)}
             </CtaButton>
             <TrustLine />
           </div>

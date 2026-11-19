@@ -37,24 +37,22 @@ export function Hero() {
             </p>
           </div>
 
-          <h1 className="mt-6 text-[2.1rem] font-extrabold leading-[1.1] text-royal-deep md:text-[3.4rem]">
-            <span className="text-toy text-[1.15em] leading-none">{`+${OFFER.activityCount}\u00a0Atividades\u00a0`}</span>
-            <br />
-            {"Prontas Para Imprimir Que Transformam "}
+          <h1 className="mt-6 text-[2.1rem] font-extrabold leading-[1.2] text-royal-deep md:text-[3.4rem]">
+            {"O Caminho Passo a Passo em "}
+            <span className="text-toy">{`${OFFER.levelCount} Níveis`}</span>
+            {" Para Seu Filho Sair do Zero à Leitura de Frases em "}
             <span className="my-2 inline-block max-w-full rounded-2xl bg-sun px-2 py-1 align-middle leading-[1.2] shadow-[0_5px_0_0_var(--sun-deep)]">
-              {`${OFFER.minutesPerDay}\u00a0Minutos Por Dia`}
+              {`${OFFER.minutesPerDay} Minutos Por Dia`}
             </span>
-            {"\u00a0Em Leitura de Verdade"}
           </h1>
 
           <p className="mx-auto mt-6 max-w-xl rounded-3xl bg-on-color/85 p-5 text-base font-semibold leading-relaxed text-ink shadow-card backdrop-blur md:mx-0 md:text-lg">
-            <strong className="text-royal">Alfabetização Sem Segredo</strong> é um material em PDF com{"\u00a0"}
-            +{OFFER.activityCount} atividades organizadas por níveis, do zero até a leitura de palavras e frases.
-            Você imprime, senta com a criança e aplica em poucos minutos por dia, sem improviso e sem estresse.
+            O <strong className="text-royal">Alfabetização Sem Segredo</strong>
+            {` é um método estruturado em PDF com mais de ${OFFER.activityCount} atividades progressivas e visual limpo. Você imprime, senta com a criança e aplica sem improviso, sem telas e sem estresse.`}
           </p>
 
           <div className="mt-7 flex flex-col items-center gap-3 md:items-start">
-            <CtaButton>Quero acessar agora por {formatBRL(OFFER.priceCents)}</CtaButton>
+            <CtaButton>Quero destravar a leitura do meu filho</CtaButton>
             <p className="font-display font-bold text-ink">
               De <s className="text-cherry">{formatBRL(OFFER.originalPriceCents)}</s> por apenas{" "}
               <span className="text-xl font-extrabold text-leaf-deep">{formatBRL(OFFER.priceCents)}</span> à vista

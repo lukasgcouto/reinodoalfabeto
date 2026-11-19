@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { OFFER, formatBRL } from "@/lib/offer";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 export function StickyCta() {
   const [show, setShow] = useState(false);
@@ -23,12 +24,9 @@ export function StickyCta() {
           <p className="text-xs line-through opacity-80">{formatBRL(OFFER.originalPriceCents)}</p>
           <p className="font-display text-xl font-extrabold text-sun">{formatBRL(OFFER.priceCents)}</p>
         </div>
-        <a
-          href={OFFER.checkoutUrl}
-          className="flex-1 rounded-full bg-leaf px-4 py-3 text-center font-display text-sm font-extrabold uppercase text-on-color shadow-[0_4px_0_0_var(--leaf-deep)]"
-        >
-          Quero meu kit agora
-        </a>
+        <Button asChild variant="cta" className="h-auto min-w-0 flex-1 px-3 py-2 text-sm tracking-normal">
+          <a href={OFFER.checkoutUrl}>Garantir meu acesso</a>
+        </Button>
       </div>
     </div>
   );

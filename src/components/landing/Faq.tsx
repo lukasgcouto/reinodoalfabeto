@@ -6,32 +6,25 @@ const faqs: { q: string; a: string[] }[] = [
   {
     q: "Meu filho não para quieto para estudar. Isso vai funcionar?",
     a: [
-      "Essa é uma das dúvidas mais comuns, e é justamente por isso que o material foi criado do jeito que foi.",
-      "Crianças agitadas costumam se dispersar com páginas cheias de elementos, cores e desenhos competindo entre si. No Alfabetização Sem Segredo, cada página tem visual limpo, lúdico e sem distrações, o que ajuda a manter o foco naturalmente. As atividades são curtas e objetivas, então ele não precisa ficar sentado por muito tempo.",
-      `Nenhum material faz milagre, e cada criança tem seu ritmo. Mas um visual leve e atividades rápidas deixam tudo muito mais fácil, e você tem ${OFFER.guaranteeDays} dias de garantia para testar.`,
+      `Cada criança tem seu ritmo. As atividades curtas e o visual limpo ajudam a reduzir distrações; comece com calma e respeite as pausas. Você tem ${OFFER.guaranteeDays} dias de garantia para testar.`,
     ],
   },
   {
     q: "Eu não sei como ensinar meu filho a ler. Vou conseguir aplicar?",
     a: [
-      "Sim. Você não precisa saber nada de pedagogia.",
-      "O guia é organizado passo a passo, por níveis de evolução. Você começa pelo primeiro nível e segue a sequência, sem se perguntar “e agora, o que vem depois?”. As atividades são claras e fáceis de aplicar.",
-      "Seu papel é sentar ao lado, incentivar e comemorar cada conquista. O material faz o resto.",
+      "Sim, você não precisa ser professora. Siga os níveis na ordem, sente ao lado da criança e incentive cada tentativa. As atividades já vêm prontas para aplicar, um passo de cada vez.",
     ],
   },
   {
     q: "Eu não tenho tempo. Como encaixar isso na minha rotina?",
     a: [
-      `Basta ${OFFER.minutesPerDay} minutos por dia.`,
-      "Como tudo já vem pronto para imprimir, você não gasta tempo planejando, pesquisando ou montando material. É imprimir, sentar e aplicar. Dá para fazer depois do lanche, antes do banho ou num intervalo da rotina.",
-      "Pouco tempo, mas com constância e direção, rende muito mais do que horas de estudo sem método.",
+      `Reserve ${OFFER.minutesPerDay} minutos por dia, depois do lanche ou do jantar, por exemplo. Imprima a próxima atividade e siga a sequência: você não precisa gastar tempo planejando.`,
     ],
   },
   {
     q: "Como recebo o material? Preciso esperar?",
     a: [
-      "Não precisa esperar. O acesso é imediato.",
-      "Assim que a compra for confirmada, você recebe o material no seu e-mail e no WhatsApp. É um guia digital em PDF, então você pode baixar, salvar e imprimir quantas vezes quiser. O acesso é vitalício.",
+      "Assim que a compra for confirmada, o acesso chega por e-mail e WhatsApp. O material é em PDF: você pode baixar, salvar e imprimir quantas vezes quiser, com acesso vitalício.",
     ],
   },
   {

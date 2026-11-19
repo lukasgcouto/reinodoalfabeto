@@ -7,6 +7,21 @@ export const OFFER = {
   originalPriceCents: 9700,
   guaranteeDays: 7,
   minutesPerDay: 15,
+  levelCount: 5,
+  bonuses: [
+    {
+      title: "Guia Rápido para Pais Sem Tempo",
+      description: "Como conduzir os 15 minutos diários sem brigas e o que fazer quando a criança errar.",
+      originalPriceCents: 2900,
+      priceCents: 0,
+    },
+    {
+      title: "Fichas de Leitura Rápida e Alfabeto de Parede",
+      description: "Material complementar para reforçar os sons e sílabas no dia a dia da casa.",
+      originalPriceCents: 3700,
+      priceCents: 0,
+    },
+  ],
   ageRange: "4 a 8 anos",
   // Replace with the real payment link (Kiwify, Hotmart, etc.).
   checkoutUrl: "#oferta",
