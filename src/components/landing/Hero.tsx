@@ -16,9 +16,9 @@ export function Hero() {
         <img
           src={media.logo}
           alt="Reino do Alfabeto"
-          width={286}
-          height={236}
-          className="h-auto w-28 rounded-lg border-4 border-on-color shadow-card md:w-36"
+          width={600}
+          height={600}
+          className="h-auto w-20 drop-shadow-lg md:w-28"
         />
         <a
           href={OFFER.checkoutUrl}
