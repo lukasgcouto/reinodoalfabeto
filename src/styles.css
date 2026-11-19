@@ -239,19 +239,22 @@
 }
 .hero-editorial-layout {
   display: grid;
-  grid-template-areas: "heading" "product" "action" "description" "trust";
-  gap: 14px;
+  grid-template-areas: "heading" "product" "action" "description";
+  gap: 10px;
 }
 .hero-heading { grid-area: heading; }
 .hero-product { grid-area: product; min-width: 0; }
 .hero-action { grid-area: action; min-width: 0; }
 .hero-description { grid-area: description; }
-.hero-trust { grid-area: trust; }
-.hero-time-highlight {
-  background: linear-gradient(transparent 62%, var(--sun) 62%, var(--sun) 94%, transparent 94%);
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+.hero-key-highlight {
+  color: var(--cherry);
+  white-space: nowrap;
 }
+.hero-primary-cta { display: grid; grid-template-columns: minmax(0, 1fr) 20px; gap: 8px; }
+.hero-primary-cta > span { padding-left: 28px; }
+.hero-primary-cta:hover { background: var(--leaf-deep); }
+.hero-primary-cta:active { transform: translateY(2px); }
+.hero-micro-trust span { white-space: nowrap; }
 .product-scene {
   position: relative;
   width: 290px;
@@ -293,11 +296,22 @@
 }
 .product-sheet-back { transform: rotate(16deg); right: 10%; top: 18px; }
 .product-sheet-front { transform: rotate(7deg); }
+@media (max-width: 359px) {
+  .hero-heading h1 { font-size: 1.25rem; }
+  .product-scene { height: 170px; }
+  .product-book { width: 94px; }
+  .product-sheet { width: 90px; }
+  .hero-action > p:not(.hero-micro-trust) { font-size: 12px; }
+  .hero-action > p:not(.hero-micro-trust) span { font-size: 18px; }
+  .hero-primary-cta { font-size: 12px; }
+  .hero-primary-cta > span { padding-left: 0; }
+  .hero-micro-trust { font-size: 11px; }
+}
 @media (min-width: 768px) {
   .editorial-hero { padding-bottom: 48px; }
   .hero-editorial-layout {
     grid-template-columns: 1.05fr 1fr;
-    grid-template-areas: "heading product" "description product" "action product" "trust product";
+    grid-template-areas: "heading product" "description product" "action product";
     column-gap: 36px;
     row-gap: 22px;
     padding-top: 32px;
