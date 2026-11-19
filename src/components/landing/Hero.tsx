@@ -24,7 +24,7 @@ export function Hero() {
           href={OFFER.checkoutUrl}
           className="hidden rounded-full bg-on-color px-5 py-2 font-display text-sm font-extrabold text-royal shadow-[0_4px_0_0_var(--sky-deep)] transition hover:-translate-y-0.5 sm:inline-block"
         >
-          Garantir por {formatBRL(OFFER.priceCents)}
+          Garantir meu acesso por {formatBRL(OFFER.priceCents)}
         </a>
       </header>
 
