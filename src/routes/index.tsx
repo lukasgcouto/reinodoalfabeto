@@ -3,7 +3,7 @@ import { Benefits } from "@/components/landing/Benefits";
 import { Closing } from "@/components/landing/Closing";
 import { Faq } from "@/components/landing/Faq";
 import { Guarantee } from "@/components/landing/Guarantee";
-import { Hero } from "@/components/landing/Hero";
+import { Hero, HeroPromoBar } from "@/components/landing/Hero";
 import { Offer } from "@/components/landing/Offer";
 import { Solution } from "@/components/landing/Solution";
 import { StickyCta } from "@/components/landing/StickyCta";
@@ -30,10 +30,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="overflow-x-hidden">
-      <div className="hero-promo bg-cherry px-4 py-2 text-center font-display text-sm font-extrabold text-on-color md:text-base">
-        {"\u00a0"}Oferta de hoje: de <s className="opacity-80">{formatBRL(OFFER.originalPriceCents)}</s> por apenas{" "}
-        <span className="text-sun">{formatBRL(OFFER.priceCents)}</span>
-      </div>
+      <HeroPromoBar />
       <Hero />
       <Story />
       <Solution />

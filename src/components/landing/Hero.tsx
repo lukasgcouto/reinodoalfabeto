@@ -1,51 +1,85 @@
-import { BookOpen } from "lucide-react";
+import { ArrowRight, BookOpen, CalendarCheck, Flame, ShieldCheck, Timer, Zap } from "lucide-react";
 import { OFFER, formatBRL } from "@/lib/offer";
-import { CtaButton } from "./CtaButton";
+import { CloudShape } from "./Decor";
 import { media } from "./media";
 import { ProductMockup } from "./ProductMockup";
 
+const benefits = [
+  { icon: Zap, label: "Acesso imediato em PDF" },
+  { icon: CalendarCheck, label: "Sem mensalidade" },
+  { icon: ShieldCheck, label: `Garantia de ${OFFER.guaranteeDays} dias` },
+];
+
+export function HeroPromoBar() {
+  return (
+    <div className="hero-promo">
+      <Flame className="hero-promo-flame" aria-hidden />
+      <span>
+        {"Oferta de hoje: de "}<s>{formatBRL(OFFER.originalPriceCents)}</s>{" por apenas "}
+        <strong>{formatBRL(OFFER.priceCents)}</strong>
+      </span>
+    </div>
+  );
+}
+
 export function Hero() {
   return (
-    <section className="editorial-hero">
-      <header className="hero-header mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-2 md:px-8 md:py-4">
-        <div className="flex min-w-0 items-center gap-2">
-          <img src={media.logo} alt="" width={600} height={600} className="size-10 shrink-0 object-contain md:size-16" />
-          <p className="whitespace-nowrap font-display text-sm font-extrabold text-royal-deep sm:text-lg md:text-2xl">Reino do Alfabeto</p>
+    <section className="ref-hero">
+      <CloudShape className="ref-cloud ref-cloud-1" />
+      <CloudShape className="ref-cloud ref-cloud-2" />
+      <CloudShape className="ref-cloud ref-cloud-3" />
+      <CloudShape className="ref-cloud ref-cloud-4" />
+      <div className="ref-inner">
+        <header className="ref-header">
+          <img src={media.logo} alt="" width={600} height={600} className="ref-logo" />
+          <div className="ref-header-text">
+            <div className="ref-header-row">
+              <p className="ref-brand">Reino do Alfabeto</p>
+              <span className="ref-format"><BookOpen aria-hidden />PDF digital</span>
+            </div>
+            <p className="ref-eyebrow">O caminho completo para alfabetizar sem segredo!</p>
+          </div>
+        </header>
+
+        <h1 className="ref-title">
+          <span className="ref-line-1">{"O Passo a Passo em "}<span className="ref-red ref-underline">{`${OFFER.levelCount} Níveis`}</span></span>
+          <span className="ref-line-2">{"Para Seu Filho Sair do"}</span>
+          <span className="ref-line-3"><span className="ref-pill">{"Zero à Leitura de Frases"}</span></span>
+          <span className="ref-line-4"><Timer className="ref-timer" aria-hidden />{"em "}<span className="ref-red">{`${OFFER.minutesPerDay} Minutos`}</span>{" Por Dia"}</span>
+        </h1>
+
+        <div className="ref-stage">
+          <span className="ref-letter ref-letter-a" aria-hidden>A</span>
+          <span className="ref-letter ref-letter-b" aria-hidden>B</span>
+          <span className="ref-letter ref-letter-c" aria-hidden>C</span>
+          <ProductMockup />
+          <div className="ref-ground" aria-hidden />
         </div>
-        <span className="hero-format flex shrink-0 items-center gap-1 text-xs font-bold text-royal md:text-sm"><BookOpen className="size-4" />PDF digital</span>
-      </header>
-      <div className="hero-editorial-layout mx-auto max-w-6xl px-4 md:px-8">
-        <div className="hero-heading text-center md:text-left">
-          <p className="hero-eyebrow mb-2 text-xs font-extrabold text-royal md:mb-4 md:text-sm">O caminho completo para alfabetizar sem segredo!</p>
-          <h1 className="hero-editorial-title">
-            <span className="hero-title-intro">
-              {"O Passo a Passo em "}
-              <span className="hero-key-highlight">{`${OFFER.levelCount} Níveis`}</span>
-            </span>
-            {" "}<span className="hero-title-outcome">{"Para Seu Filho Sair do Zero à "}<span className="hero-title-reading">Leitura de Frases</span></span>{" "}
-            <span className="hero-title-cadence">
-              {"em "}<span className="hero-key-highlight">{`${OFFER.minutesPerDay} Minutos Por Dia`}</span>
-            </span>
-          </h1>
-        </div>
-        <div className="hero-product"><ProductMockup /></div>
-        <div className="hero-description text-center md:text-left">
-          <p className="text-[0.9375rem] font-semibold leading-relaxed text-ink md:text-base">
-            O <strong className="text-royal">Alfabetização Sem Segredo</strong>
+
+        <div className="ref-action">
+          <a href={OFFER.checkoutUrl} className="ref-cta">
+            <span>Quero destravar a leitura agora</span>
+            <ArrowRight aria-hidden />
+          </a>
+          <p className="ref-price">
+            {"De "}<s>{formatBRL(OFFER.originalPriceCents)}</s>{" por apenas "}
+            <strong>{formatBRL(OFFER.priceCents)}</strong>{" à vista"}
+          </p>
+          <ul className="ref-benefits">
+            {benefits.map(({ icon: Icon, label }) => (
+              <li key={label}><Icon aria-hidden /><span>{label}</span></li>
+            ))}
+          </ul>
+          <p className="ref-description">
+            {"O "}<strong>Alfabetização Sem Segredo</strong>
             {` é um método estruturado em PDF com mais de ${OFFER.activityCount} atividades progressivas e visual limpo. Você imprime, senta com a criança e aplica sem improviso, sem telas e sem estresse.`}
           </p>
         </div>
-        <div className="hero-action flex flex-col items-center gap-2 md:items-start md:gap-3">
-            <CtaButton pulse={false} className="hero-primary-cta h-auto min-h-14 w-full px-4 py-3 text-sm md:w-auto md:text-base">Quero destravar a leitura agora</CtaButton>
-            <p className="text-center text-sm font-bold text-ink">
-              De <s className="text-cherry">{formatBRL(OFFER.originalPriceCents)}</s> por apenas{" "}
-              <span className="text-xl font-extrabold text-leaf-deep">{formatBRL(OFFER.priceCents)}</span> à vista
-            </p>
-            <p className="hero-micro-trust text-center text-xs font-semibold leading-relaxed text-ink md:text-left">
-              <span>Acesso imediato em PDF</span>{" • "}<span>Sem mensalidade</span>{" • "}<span>Garantia de {OFFER.guaranteeDays} dias</span>
-            </p>
-        </div>
       </div>
+      <svg className="ref-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden>
+        <path className="ref-wave-light" d="M0 50c240-40 480-40 720 0s480 40 720 0v70H0z" />
+        <path className="ref-wave-deep" d="M0 70c260-45 520-35 760 5s460 30 680-10v55H0z" />
+      </svg>
     </section>
   );
 }
