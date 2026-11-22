@@ -449,3 +449,48 @@
   .testimonials-window { overflow-x: auto; }
   .testimonials-group[aria-hidden="true"] { display: none; }
 }
+
+/* First-screen fit: every hero size scales from one font-size tied to both
+   viewport width and height, so promo → benefits always fit the first screen. */
+.hero-promo, .ref-hero { --hero-f: clamp(10px, min(4.07vw, 2.05svh), 26px); }
+.hero-promo { font-size: calc(var(--hero-f) * 0.9); padding: 0.5em 0.8em; }
+.hero-promo-flame { width: 1.5em; height: 1.5em; }
+.ref-hero { font-size: var(--hero-f); }
+.ref-cloud-1 { width: 9em; left: -3em; top: 14em; }
+.ref-cloud-2 { width: 10em; right: -4em; top: 7em; }
+.ref-cloud-3 { width: 7.5em; right: -2em; top: 24em; }
+.ref-cloud-4 { width: 8em; left: -2.5em; top: 30em; }
+.ref-inner { max-width: 44em; padding: 0.75em 1em 0; }
+.ref-header { gap: 0.65em; max-width: 30em; margin: 0 auto; }
+.ref-logo { width: 4em; height: 4em; }
+.ref-brand { font-size: 1.15em; }
+.ref-format { font-size: 0.8em; gap: 0.3em; }
+.ref-format svg { width: 1.4em; height: 1.4em; }
+.ref-eyebrow { font-size: 0.72em; padding: 0.35em 1em; margin-top: 0.35em; }
+.ref-title { margin-top: 0.75em; }
+.ref-line-1, .ref-line-4 { font-size: 1.35em; }
+.ref-line-2, .ref-pill { font-size: 1.75em; }
+.ref-line-4 { gap: 0.3em; margin-top: 0.45em; }
+.ref-stage { margin-top: 0.6em; padding-bottom: 0.4em; }
+.ref-letter { font-size: 4em; }
+.ref-letter-a { left: 2%; top: 22%; }
+.ref-letter-b { left: 6%; top: 52%; }
+.ref-letter-c { right: 2%; top: 58%; }
+.product-scene { width: 19em; max-width: 100%; height: 17em; }
+.product-book { width: 9.6em; left: 16%; }
+.product-sheet { width: 7.8em; top: 1.6em; right: 4%; }
+.product-sheet-back { right: 0; top: 2.3em; }
+.ref-action { gap: 0.6em; padding: 0.6em 0 1.25em; }
+.ref-cta { min-height: 3.5em; max-width: 30em; font-size: 1.1em; gap: 0.8em; padding: 0.6em 1.3em; }
+.ref-cta svg { width: 1.5em; height: 1.5em; }
+.ref-price { font-size: 1em; }
+.ref-price strong { font-size: 2em; }
+.ref-benefits { max-width: 40em; margin-top: 0.1em; }
+.ref-benefits li { font-size: 0.78em; }
+.ref-benefits svg { width: 2.4em; height: 2.4em; }
+.ref-description { font-size: 0.875em; }
+@media (min-width: 768px) {
+  .ref-benefits li { flex-direction: row; justify-content: center; gap: 0.8em; font-size: 0.85em; text-align: left; }
+  .ref-benefits svg { width: 2.6em; height: 2.6em; flex-shrink: 0; }
+}
+.ref-ground { left: -60%; right: -60%; }
