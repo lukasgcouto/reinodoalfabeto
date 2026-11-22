@@ -494,3 +494,5 @@
   .ref-benefits svg { width: 2.6em; height: 2.6em; flex-shrink: 0; }
 }
 .ref-ground { left: -60%; right: -60%; }
+.product-scene { width: 21em; height: 17em; display: flex; align-items: center; justify-content: center; }
+.product-mockup-img { position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 1em 1em color-mix(in oklab, var(--royal-deep) 30%, transparent)); }

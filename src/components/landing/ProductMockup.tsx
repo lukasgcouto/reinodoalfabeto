@@ -1,14 +1,16 @@
-import cover from "@/assets/capa-alfabetizacao-sem-segredo.png";
-import { media } from "./media";
+import mockup from "@/assets/mockup-reino-do-alfabeto.png.asset.json";
 
 export function ProductMockup() {
   return (
-    <div className="product-scene" aria-label="Material digital Alfabetização Sem Segredo e amostras das atividades">
-      <img className="product-sheet product-sheet-back" src={media.ligue} alt="" width={1050} height={1500} />
-      <img className="product-sheet product-sheet-front" src={media.silabas} alt="Página de atividade de sílabas" width={1050} height={1500} />
-      <div className="product-book">
-        <img src={cover} alt="Capa do PDF Alfabetização Sem Segredo, Reino do Alfabeto, para crianças de 4 a 8 anos" width={768} height={1363} fetchPriority="high" />
-      </div>
+    <div className="product-scene">
+      <img
+        className="product-mockup-img"
+        src={mockup.url}
+        alt="Material Alfabetização Sem Segredo, do Reino do Alfabeto, com uma página de atividade de sílabas"
+        width={900}
+        height={729}
+        fetchPriority="high"
+      />
     </div>
   );
 }
