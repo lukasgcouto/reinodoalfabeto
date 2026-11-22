@@ -1,4 +1,4 @@
-import mockup from "@/assets/mockup-reino-do-alfabeto.png.asset.json";
+import mockup from "@/assets/mockup-reino-do-alfabeto-v2.png.asset.json";
 
 export function ProductMockup() {
   return (

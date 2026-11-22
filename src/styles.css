@@ -496,3 +496,31 @@
 .ref-ground { left: -60%; right: -60%; }
 .product-scene { width: 21em; height: 17em; display: flex; align-items: center; justify-content: center; }
 .product-mockup-img { position: relative; z-index: 2; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 1em 1em color-mix(in oklab, var(--royal-deep) 30%, transparent)); }
+/* Scenery around the product mockup */
+.ref-stage::before {
+  content: ""; position: absolute; z-index: 0; left: 50%; top: 42%; width: 26em; height: 26em; transform: translate(-50%, -50%);
+  border-radius: 50%; pointer-events: none;
+  background:
+    radial-gradient(circle, color-mix(in oklab, var(--sun) 55%, transparent) 0%, color-mix(in oklab, var(--sun) 18%, transparent) 38%, transparent 66%),
+    repeating-conic-gradient(from 0deg, color-mix(in oklab, var(--on-color) 45%, transparent) 0deg 7deg, transparent 7deg 20deg);
+  mask-image: radial-gradient(circle, #000 30%, transparent 68%);
+}
+.ref-ground {
+  left: -60%; right: -60%; bottom: -0.6em; height: 46%;
+  background:
+    radial-gradient(ellipse 10% 22% at 34% 64%, var(--leaf) 60%, transparent 62%),
+    radial-gradient(ellipse 8% 18% at 39% 70%, var(--grass) 60%, transparent 62%),
+    radial-gradient(ellipse 10% 22% at 66% 64%, var(--leaf) 60%, transparent 62%),
+    radial-gradient(ellipse 8% 18% at 61% 70%, var(--grass) 60%, transparent 62%),
+    radial-gradient(ellipse 60% 50% at 50% 100%, var(--on-color) 70%, transparent 71%),
+    radial-gradient(ellipse 34% 62% at 30% 100%, var(--grass) 60%, transparent 61%),
+    radial-gradient(ellipse 34% 62% at 70% 100%, var(--grass) 60%, transparent 61%),
+    radial-gradient(ellipse 30% 80% at 18% 100%, var(--leaf) 60%, transparent 61%),
+    radial-gradient(ellipse 30% 80% at 82% 100%, var(--leaf) 60%, transparent 61%);
+}
+.ref-ground::before, .ref-ground::after {
+  content: "✿"; position: absolute; bottom: 32%; font-size: 1.2em; color: var(--cherry); text-shadow: 1.6em 0.5em 0 var(--sun), 3.2em 0.1em 0 var(--on-color);
+}
+.ref-ground::before { left: 36%; }
+.ref-ground::after { right: 36%; color: var(--sun); text-shadow: -1.6em 0.5em 0 var(--cherry), -3.2em 0.1em 0 var(--on-color); }
+.ref-ground { -webkit-mask-image: linear-gradient(180deg, #000 72%, transparent 100%); mask-image: linear-gradient(180deg, #000 72%, transparent 100%); }
