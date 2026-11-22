@@ -111,8 +111,17 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="pt-BR">
       <head>
         <HeadContent />
+        {/* Google Tag Manager - GTM-NWCKP2PH */}
+        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NWCKP2PH"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        `}} />
       </head>
       <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWCKP2PH"
+        height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
         {children}
         <Scripts />
       </body>
