@@ -577,7 +577,7 @@
 /* Ajustes só para mobile/tablet: botão do Hero menor, mockup e fundo maiores */
 @media (max-width: 1023px) {
   /* Botão do Hero (só o da primeira tela) */
-  .ref-action a { min-height: 0 !important; height: auto !important; padding-block: 0.6em !important; line-height: 1.1 !important; font-size: 0.95em !important; }
+  .ref-action a { min-height: 0 !important; height: auto !important; padding-block: 0.7em !important; line-height: 1.1 !important; font-size: 0.95em !important; }
 
   /* Mockup e fundo atrás dele */
   .product-scene { width: 23em; height: 16.5em; }
