@@ -568,3 +568,13 @@
 }
 @media (max-width: 1023px) { .product-scene { height: 15em; } .ref-action > a { height: auto; min-height: 0; padding-block: 0.75em; } }
 @media (max-width: 359px) { .ref-action > a { font-size: 0.95rem; } .ref-action { gap: 0.45em; } }
+
+
+
+
+/* Botão do Hero menor só no mobile/tablet */
+@media (max-width: 1023px) {
+  .ref-cta { font-size: 0.95em; max-width: 26em; gap: 0.6em; padding-inline: 1.1em; }
+  .ref-cta svg { width: 1.3em; height: 1.3em; }
+  .ref-action > a { padding-block: 0.6em; }
+}
