@@ -578,3 +578,17 @@
   .ref-cta svg { width: 1.3em; height: 1.3em; }
   .ref-action > a { padding-block: 0.6em; }
 }
+
+
+
+/* Ajustes só para mobile/tablet: botão do Hero menor, mockup e fundo maiores */
+@media (max-width: 1023px) {
+  /* Botão do Hero */
+  .ref-cta { font-size: 0.95em; max-width: 26em; gap: 0.6em; padding-inline: 1.1em; }
+  .ref-cta svg { width: 1.3em; height: 1.3em; }
+  .ref-action > a { padding-block: 0.6em; }
+
+  /* Mockup e fundo atrás dele */
+  .product-scene { width: 23em; height: 16.5em; }
+  .ref-stage::before { width: 29em; height: 29em; }
+}
