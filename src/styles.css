@@ -558,32 +558,11 @@
 }
 @media (min-width: 1024px) { .ref-benefits { max-width: none; width: auto; display: flex; } .ref-benefits li { white-space: nowrap; } }
 
-/* Header per user's reference: offer bar + brand row + centered headline (all devices) */
+/* Header per user's reference (mobile/tablet only; desktop keeps the earlier grid) */
+@media (max-width: 1023px) {
 .hero-promo s { text-decoration: none; opacity: 1; }
 .hero-promo strong { font-size: 1.45em; }
 .ref-brand { color: var(--royal-deep); }
 .ref-format { color: var(--royal-deep); }
 .ref-eyebrow { display: block; width: fit-content; max-width: 100%; }
-@media (min-width: 1024px) {
-  .ref-inner {
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-    grid-template-areas: "header header" "title title" "action stage";
-    grid-template-rows: auto auto 1fr; padding-top: 1em;
-  }
-  .ref-header { max-width: 50em; margin: 0 auto; width: 100%; gap: 1.2em; }
-  .ref-logo { width: 5.6em; height: 5.6em; }
-  .ref-brand { font-size: 1.6em; }
-  .ref-format { font-size: 1.15em; }
-  .ref-eyebrow { font-size: 0.95em; padding: 0.4em 1.6em; margin-top: 0.4em; }
-  .ref-title { text-align: center; margin-top: 0.4em; }
-  .ref-line-1, .ref-line-4 { font-size: 1.85em; }
-  .ref-line-2, .ref-pill { font-size: 2.6em; }
-  .ref-line-3 { margin-left: 0; margin-top: 0.2em; }
-  .ref-line-4 { justify-content: center; margin-top: 0.25em; }
-  .ref-pill { padding-inline: 0.8em; }
-  .ref-action { align-self: center; padding: 0.5em 0 1em; }
-  .ref-stage { margin-top: 0.4em; }
-  .product-scene { height: 19em; max-width: 26em; }
-  .ref-stage::before { width: 26em; height: 26em; }
 }
-@media (min-width: 1024px) { .ref-letter-a { left: 6%; top: 10%; } .ref-letter-b { left: 9%; top: 52%; } .hero-promo { font-size: calc(var(--hero-f) * 1.05); } }
