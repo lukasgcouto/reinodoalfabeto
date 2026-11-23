@@ -1,8 +1,9 @@
-import { ArrowRight, BookOpen, CalendarCheck, Flame, ShieldCheck, Timer, Zap } from "lucide-react";
+import { BookOpen, CalendarCheck, Flame, ShieldCheck, Timer, Zap } from "lucide-react";
 import { OFFER, formatBRL } from "@/lib/offer";
 import { CloudShape } from "./Decor";
 import { media } from "./media";
 import { ProductMockup } from "./ProductMockup";
+import { CtaButton } from "./CtaButton";
 
 const benefits = [
   { icon: Zap, label: "Acesso imediato em PDF" },
@@ -57,10 +58,7 @@ export function Hero() {
         </div>
 
         <div className="ref-action">
-          <a href={OFFER.checkoutUrl} className="ref-cta">
-            <span>Quero destravar a leitura agora</span>
-            <ArrowRight aria-hidden />
-          </a>
+          <CtaButton className="w-full sm:w-auto">Quero destravar a leitura agora</CtaButton>
           <p className="ref-price">
             {"De "}<s>{formatBRL(OFFER.originalPriceCents)}</s>{" por apenas "}
             <strong>{formatBRL(OFFER.priceCents)}</strong>{" à vista"}

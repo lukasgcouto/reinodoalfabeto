@@ -566,3 +566,5 @@
 .ref-format { color: var(--royal-deep); }
 .ref-eyebrow { display: block; width: fit-content; max-width: 100%; }
 }
+@media (max-width: 1023px) { .product-scene { height: 15em; } .ref-action > a { height: auto; min-height: 0; padding-block: 0.75em; } }
+@media (max-width: 359px) { .ref-action > a { font-size: 0.95rem; } .ref-action { gap: 0.45em; } }
