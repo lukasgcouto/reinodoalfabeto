@@ -7,3 +7,4 @@
 - [x] Preparar e verificar carrossel com os cinco depoimentos reais e autorizados
 - [x] Landing page de alta conversão (Alfabetização Sem Segredo) no visual do kit
 - [ ] Trocar link dos botões de compra pelo link de pagamento (aguardando o usuário)
+- [x] Primeira dobra desktop (≥1024px) em grid de duas colunas, mobile intacto

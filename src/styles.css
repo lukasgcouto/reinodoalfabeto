@@ -524,3 +524,36 @@
 .ref-ground::before { left: 36%; }
 .ref-ground::after { right: 36%; color: var(--sun); text-shadow: -1.6em 0.5em 0 var(--cherry), -3.2em 0.1em 0 var(--on-color); }
 .ref-ground { -webkit-mask-image: linear-gradient(180deg, #000 72%, transparent 100%); mask-image: linear-gradient(180deg, #000 72%, transparent 100%); }
+
+/* Desktop first screen (≥1024px): two-column grid. Mobile rules above stay untouched. */
+@media (min-width: 1024px) {
+  .hero-promo, .ref-hero { --hero-f: clamp(14px, min(1.12vw, 2.3svh), 21px); }
+  .ref-inner {
+    max-width: 78em; padding: 1.6em 3em 0.5em;
+    display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    grid-template-areas: "header stage" "title stage" "action stage";
+    grid-template-rows: auto auto 1fr; column-gap: 3em; align-items: start; text-align: left;
+  }
+  .ref-header { grid-area: header; margin: 0; max-width: none; }
+  .ref-title { grid-area: title; margin-top: 1.1em; text-wrap: balance; }
+  .ref-line-1, .ref-line-4 { font-size: 1.75em; }
+  .ref-line-2, .ref-pill { font-size: 2.45em; }
+  .ref-line-3 { margin-left: -0.3em; }
+  .ref-line-4 { justify-content: flex-start; }
+  .ref-stage { grid-area: stage; align-self: center; margin: 0; padding-bottom: 1em; }
+  .product-scene { width: 100%; max-width: 32em; height: 27em; }
+  .ref-stage::before { width: 34em; height: 34em; }
+  .ref-letter { font-size: 5em; }
+  .ref-letter-a { left: -4%; top: 8%; }
+  .ref-letter-b { left: -2%; top: 50%; }
+  .ref-letter-c { right: -4%; top: 56%; }
+  .ref-ground { left: -40%; right: -40%; height: 38%; }
+  .ref-action { grid-area: action; align-items: flex-start; padding: 1.4em 0 1.5em; gap: 0.9em; }
+  .ref-cta { width: auto; min-width: 24em; font-size: 1.3em; min-height: 3.4em; padding-inline: 1.6em; }
+  .ref-price { font-size: 1.15em; }
+  .ref-benefits { max-width: 36em; }
+  .ref-benefits li { justify-content: flex-start; padding: 0 0.9em; }
+  .ref-benefits li:first-child { padding-left: 0; }
+  .ref-description { display: none; }
+}
+@media (min-width: 1024px) { .ref-benefits { max-width: none; width: auto; display: flex; } .ref-benefits li { white-space: nowrap; } }
