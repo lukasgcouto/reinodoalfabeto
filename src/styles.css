@@ -572,21 +572,14 @@
 
 
 
-/* Botão do Hero menor só no mobile/tablet */
-@media (max-width: 1023px) {
-  .ref-cta { font-size: 0.95em; max-width: 26em; gap: 0.6em; padding-inline: 1.1em; }
-  .ref-cta svg { width: 1.3em; height: 1.3em; }
-  .ref-action > a { padding-block: 0.6em; }
-}
-
 
 
 /* Ajustes só para mobile/tablet: botão do Hero menor, mockup e fundo maiores */
 @media (max-width: 1023px) {
   /* Botão do Hero */
-  .ref-cta { font-size: 0.95em; max-width: 26em; gap: 0.6em; padding-inline: 1.1em; }
+  .ref-cta { font-size: 0.95em; max-width: 26em; gap: 0.6em; padding-inline: 1.1em; line-height: 1.05; }
   .ref-cta svg { width: 1.3em; height: 1.3em; }
-  .ref-action > a { padding-block: 0.6em; }
+  .ref-action > a { padding-block: 0.35em; min-height: 0; }
 
   /* Mockup e fundo atrás dele */
   .product-scene { width: 23em; height: 16.5em; }
