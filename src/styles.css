@@ -580,7 +580,7 @@
   .ref-cta { font-size: 0.95em; max-width: 26em; gap: 0.6em; padding-inline: 1em; line-height: 1; }
   .ref-cta > * { line-height: 1 !important; margin: 0; }
   .ref-cta svg { width: 1.3em; height: 1.3em; }
-  .ref-action > a { padding-block: 0.35em; min-height: 0; }
+  .ref-action > a.ref-cta { min-height: 0 !important; height: auto !important; padding-block: 0.25em !important; }
 
   /* Mockup e fundo atrás dele */
   .product-scene { width: 23em; height: 16.5em; }
