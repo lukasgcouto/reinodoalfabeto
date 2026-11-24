@@ -633,3 +633,5 @@
 @media (max-width: 1023px) {
   .ref-description { font-size: 1.1em; }
 }
+
+.ref-price strong { font-size: 1.7em; }
