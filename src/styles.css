@@ -629,3 +629,7 @@
 @media (min-width: 1024px) {
   .ref-inner { padding-top: 3em; }
 }
+
+@media (max-width: 1023px) {
+  .ref-description { font-size: 1.1em; }
+}
