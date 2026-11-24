@@ -594,4 +594,9 @@
   /* Mockup e fundo atrás dele */
   .product-scene { width: 23em; height: 16.5em; }
   .ref-stage::before { width: 29em; height: 29em; }
+
+   /* Benefícios e descrição maiores */
+  .ref-benefits li { font-size: 0.9em; }
+  .ref-benefits svg { width: 2.7em; height: 2.7em; }
+  .ref-description { font-size: 1em; }
 }
