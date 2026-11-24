@@ -44,6 +44,11 @@ describe("manual activity navigation", () => {
     expect(carousel.hook).toHaveBeenCalledWith(expect.objectContaining({ watchDrag: true, slidesToScroll: 1, axis: "x" }), undefined);
   });
 
+  it("uses a faster manual transition while keeping every page centered", () => {
+    render(<ActivityCarousel />);
+    expect(carousel.hook).toHaveBeenCalledWith(expect.objectContaining({ duration: 16, align: "center", containScroll: false }), undefined);
+  });
+
   it("moves only when the user requests the next activity or a page", () => {
     render(<ActivityCarousel />);
     fireEvent.click(screen.getByRole("button", { name: "Próxima atividade" }));

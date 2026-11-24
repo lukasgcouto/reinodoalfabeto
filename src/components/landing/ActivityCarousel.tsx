@@ -5,10 +5,10 @@ import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/com
 import { media } from "./media";
 
 const activities = [
-  { src: media.ligue, alt: "Atividade ligue cada desenho à palavra correspondente", rotation: "-rotate-2" },
-  { src: media.silabas, alt: "Atividade complete as palavras com as sílabas", rotation: "rotate-2" },
-  { src: media.recorte, alt: "Atividade recorte e cole as palavras dos meios de transporte", rotation: "rotate-1" },
-  { src: media.vogais, alt: "Atividade complete os nomes dos animais com as vogais", rotation: "-rotate-1" },
+  { src: media.ligue, alt: "Atividade ligue cada desenho à palavra correspondente" },
+  { src: media.silabas, alt: "Atividade complete as palavras com as sílabas" },
+  { src: media.recorte, alt: "Atividade recorte e cole as palavras dos meios de transporte" },
+  { src: media.vogais, alt: "Atividade complete os nomes dos animais com as vogais" },
 ];
 
 export function ActivityCarousel() {
@@ -53,17 +53,17 @@ export function ActivityCarousel() {
       </p>
       <Carousel
         setApi={setApi}
-        opts={{ align: "start", containScroll: "trimSnaps", slidesToScroll: 1, loop: false, watchDrag: true }}
+        opts={{ align: "center", containScroll: false, duration: 16, slidesToScroll: 1, loop: false, watchDrag: true }}
         className="mt-6"
         aria-labelledby="activity-gallery-title"
         tabIndex={0}
       >
-        <CarouselContent className="activity-gallery-track -ml-4 cursor-grab py-5 active:cursor-grabbing md:-ml-6">
+        <CarouselContent className="activity-gallery-track -ml-4 cursor-grab items-center py-5 active:cursor-grabbing md:-ml-6">
           {activities.map((image, index) => (
             <CarouselItem key={image.src} className="basis-[86%] pl-4 sm:basis-[58%] md:basis-[38%] md:pl-6" aria-label={`${index + 1} de ${activities.length}`}>
-              <figure className={`mx-2 ${image.rotation}`}>
+              <figure className="mx-auto w-full">
                 <img src={image.src} alt={image.alt} width={1050} height={1500} loading="lazy" draggable={false}
-                  className="aspect-[7/10] w-full select-none rounded-2xl border-[6px] border-on-color object-contain bg-card shadow-card" />
+                  className="mx-auto aspect-[7/10] w-full select-none object-contain" />
               </figure>
             </CarouselItem>
           ))}
