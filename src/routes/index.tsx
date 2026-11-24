@@ -8,6 +8,7 @@ import { Offer } from "@/components/landing/Offer";
 import { Solution } from "@/components/landing/Solution";
 import { StickyCta } from "@/components/landing/StickyCta";
 import { Story } from "@/components/landing/Story";
+import { Testimonials } from "@/components/landing/Testimonials";
 import { OFFER, formatBRL } from "@/lib/offer";
 
 const title = `Alfabetização Sem Segredo: ${OFFER.activityCount} atividades para imprimir | Reino do Alfabeto`;
@@ -35,6 +36,11 @@ function Index() {
       <Story />
       <Solution />
       <Benefits />
+      <div className="bg-background px-4 pb-16 md:pb-24">
+        <div className="mx-auto max-w-6xl">
+          <Testimonials />
+        </div>
+      </div>
       <Offer />
       <Guarantee />
       <Faq />
