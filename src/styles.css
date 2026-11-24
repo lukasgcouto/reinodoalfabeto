@@ -648,3 +648,8 @@
   .ref-description.ref-description-desk { display: block; grid-area: desc; margin-top: 0.8em; }
   .ref-description.ref-description-mobile { display: none; }
 }
+
+
+@media (min-width: 1024px) {
+  .ref-description.ref-description-desk { font-size: 1.15em; }
+}
