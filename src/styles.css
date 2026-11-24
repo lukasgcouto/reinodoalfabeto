@@ -690,3 +690,8 @@
   .ref-letter-a { left: -12%; }
   .ref-letter-b { left: -10%; }
 }
+
+
+@media (max-width: 1023px) {
+  .ref-benefits { margin-top: 1em; }
+}
