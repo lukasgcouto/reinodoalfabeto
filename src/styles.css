@@ -677,3 +677,8 @@
     align-items: center;
   }
 }
+
+@media (min-width: 1024px) {
+  .product-scene { max-width: 38em; height: 32em; }
+  .ref-stage::before { width: 40em; height: 40em; }
+}
