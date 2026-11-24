@@ -660,3 +660,12 @@
   background-size: 100% 0.16em;
   background-position: 0 88%;
 }
+
+
+@media (min-width: 1024px) {
+  .activity-gallery {
+    max-width: 60rem;
+    margin-inline: auto;
+    padding: 1.5rem;
+  }
+}
