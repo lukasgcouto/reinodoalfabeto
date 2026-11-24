@@ -31,9 +31,6 @@ export function Hero() {
       <CloudShape className="ref-cloud ref-cloud-3" />
       <CloudShape className="ref-cloud ref-cloud-4" />
       <div className="ref-inner">
-        <header className="ref-header">
-          <img src={media.logo} alt="" width={600} height={600} className="ref-logo" />
-        </header>
 
         <h1 className="ref-title">
           <span className="ref-line-1">{"O Passo a Passo em "}<span className="ref-red ref-underline">{`${OFFER.levelCount} Níveis`}</span></span>
