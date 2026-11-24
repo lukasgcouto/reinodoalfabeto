@@ -52,10 +52,6 @@ export function Hero() {
 
         <div className="ref-action">
           <CtaButton className="w-full sm:w-auto">Quero destravar a leitura agora</CtaButton>
-          <p className="ref-price">
-            {"De "}<s>{formatBRL(OFFER.originalPriceCents)}</s>{" por apenas "}
-            <strong>{formatBRL(OFFER.priceCents)}</strong>{" à vista"}
-          </p>
           <ul className="ref-benefits">
             {benefits.map(({ icon: Icon, label }) => (
               <li key={label}><Icon aria-hidden /><span>{label}</span></li>
