@@ -604,3 +604,16 @@
   .ref-price { font-size: 1.2em; }
   .ref-price strong { font-size: 1.67em; }
 }
+
+
+
+/* Título principal: mais para cima e todas as linhas do mesmo tamanho */
+.ref-title { margin-top: 0.25em; }
+.ref-line-1, .ref-line-2, .ref-line-3, .ref-line-4 { font-size: 1.45em; margin-top: 0.15em; }
+.ref-pill { font-size: 1em; }
+
+@media (min-width: 1024px) {
+  .ref-title { margin-top: 0.4em; }
+  .ref-line-1, .ref-line-2, .ref-line-3, .ref-line-4 { font-size: 2em; }
+  .ref-pill { font-size: 1em; }
+}
