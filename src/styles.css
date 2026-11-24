@@ -450,6 +450,18 @@
   .testimonials-group[aria-hidden="true"] { display: none; }
 }
 
+.activity-gallery-track { touch-action: pan-y pinch-zoom; }
+.activity-gallery[data-entered="true"] .activity-gallery-next svg {
+  animation: activity-gallery-hint 1.2s ease-in-out 1;
+}
+@keyframes activity-gallery-hint {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .activity-gallery[data-entered="true"] .activity-gallery-next svg { animation: none; }
+}
+
 /* First-screen fit: every hero size scales from one font-size tied to both
    viewport width and height, so promo → benefits always fit the first screen. */
 .hero-promo, .ref-hero { --hero-f: clamp(10px, min(4.07vw, 2.05svh), 26px); }

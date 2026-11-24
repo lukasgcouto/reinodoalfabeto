@@ -2,7 +2,7 @@ import { Check, X } from "lucide-react";
 import { OFFER } from "@/lib/offer";
 import { CtaButton } from "./CtaButton";
 import { SectionTitle } from "./Decor";
-import { media } from "./media";
+import { ActivityCarousel } from "./ActivityCarousel";
 import { Testimonials } from "./Testimonials";
 
 const levels = [
@@ -103,31 +103,7 @@ export function Solution() {
           </div>
         </div>
 
-        {/* sample pages */}
-        <div className="mt-16 rounded-[2.5rem] bg-sky-gradient p-6 md:p-10">
-          <p className="text-center font-display text-2xl font-extrabold text-royal-deep md:text-3xl">
-            Veja como são as páginas por dentro
-          </p>
-          <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
-            {[
-              { src: media.ligue, alt: "Atividade ligue cada desenho à palavra correspondente", r: "-rotate-2" },
-              { src: media.silabas, alt: "Atividade complete as palavras com as sílabas", r: "rotate-2" },
-              { src: media.recorte, alt: "Atividade recorte e cole as palavras dos meios de transporte", r: "rotate-1" },
-              { src: media.vogais, alt: "Atividade complete os nomes dos animais com as vogais", r: "-rotate-1" },
-            ].map((img) => (
-              <figure key={img.src} className={`relative ${img.r}`}>
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  width={1050}
-                  height={1500}
-                  loading="lazy"
-                  className="w-full rounded-2xl border-[6px] border-on-color shadow-card"
-                />
-              </figure>
-            ))}
-          </div>
-        </div>
+        <ActivityCarousel />
 
         <Testimonials />
 
