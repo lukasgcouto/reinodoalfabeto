@@ -33,11 +33,6 @@ export function Hero() {
       <div className="ref-inner">
         <header className="ref-header">
           <img src={media.logo} alt="" width={600} height={600} className="ref-logo" />
-          <div className="ref-header-text">
-            <div className="ref-header-row">
-              <span className="ref-format"><BookOpen aria-hidden />PDF digital</span>
-            </div>
-          </div>
         </header>
 
         <h1 className="ref-title">
