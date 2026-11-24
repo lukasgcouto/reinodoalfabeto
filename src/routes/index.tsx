@@ -36,7 +36,7 @@ function Index() {
       <Story />
       <Solution />
       <Benefits />
-      <div className="bg-background px-4 pb-16 md:pb-24">
+         <div className="testimonials-band px-4 pb-16 md:pb-24">
         <div className="mx-auto max-w-6xl">
           <Testimonials />
         </div>
