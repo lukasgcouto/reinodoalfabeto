@@ -623,3 +623,9 @@
 @media (max-width: 1023px) {
   .ref-stage { margin-top: 1.2em; }
 }
+
+
+/* Espaço no topo de toda a primeira tela, só no desktop */
+@media (min-width: 1024px) {
+  .ref-inner { padding-top: 3em; }
+}
