@@ -682,3 +682,11 @@
   .product-scene { max-width: 38em; height: 32em; }
   .ref-stage::before { width: 40em; height: 40em; }
 }
+
+.ref-letter-a { left: -8%; }
+.ref-letter-b { left: -6%; }
+
+@media (min-width: 1024px) {
+  .ref-letter-a { left: -12%; }
+  .ref-letter-b { left: -10%; }
+}
