@@ -635,3 +635,16 @@
 }
 
 .ref-price strong { font-size: 1.7em; }
+
+
+
+.ref-description-desk { display: none; }
+
+@media (min-width: 1024px) {
+  .ref-inner {
+    grid-template-areas: "title stage" "desc stage" "action stage";
+    grid-template-rows: auto auto 1fr;
+  }
+  .ref-description.ref-description-desk { display: block; grid-area: desc; margin-top: 0.8em; }
+  .ref-description.ref-description-mobile { display: none; }
+}
