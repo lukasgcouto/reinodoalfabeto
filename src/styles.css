@@ -653,3 +653,9 @@
 @media (min-width: 1024px) {
   .ref-description.ref-description-desk { font-size: 1.15em; }
 }
+
+.ref-underline {
+  box-shadow: inset 0 -0.16em 0 var(--sun);
+  padding-bottom: 0;
+  line-height: 0.9;
+}
