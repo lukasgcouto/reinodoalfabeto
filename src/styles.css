@@ -614,6 +614,6 @@
 
 @media (min-width: 1024px) {
   .ref-title { margin-top: 0.4em; }
-  .ref-line-1, .ref-line-2, .ref-line-3, .ref-line-4 { font-size: 2.5em; }
+  .ref-line-1, .ref-line-2, .ref-line-3, .ref-line-4 { font-size: 2em; }
   .ref-pill { font-size: 1em; }
 }
