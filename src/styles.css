@@ -730,4 +730,5 @@
 
 .testimonials-band {
   background: #6FD2FC;
+  display: flow-root;
 }
