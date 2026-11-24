@@ -617,3 +617,9 @@
   .ref-line-1, .ref-line-2, .ref-line-3, .ref-line-4 { font-size: 2.5em; }
   .ref-pill { font-size: 1em; }
 }
+
+
+/* Afastar o mockup do título, só no mobile/tablet */
+@media (max-width: 1023px) {
+  .ref-stage { margin-top: 1.2em; }
+}
