@@ -35,10 +35,8 @@ export function Hero() {
           <img src={media.logo} alt="" width={600} height={600} className="ref-logo" />
           <div className="ref-header-text">
             <div className="ref-header-row">
-              <p className="ref-brand">Reino do Alfabeto</p>
               <span className="ref-format"><BookOpen aria-hidden />PDF digital</span>
             </div>
-            <p className="ref-eyebrow">O caminho completo para alfabetizar sem segredo!</p>
           </div>
         </header>
 
