@@ -1,7 +1,6 @@
-import { BookOpen, CalendarCheck, Flame, ShieldCheck, Timer, Zap } from "lucide-react";
+import { CalendarCheck, Flame, ShieldCheck, Timer, Zap } from "lucide-react";
 import { OFFER, formatBRL } from "@/lib/offer";
 import { CloudShape } from "./Decor";
-import { media } from "./media";
 import { ProductMockup } from "./ProductMockup";
 import { CtaButton } from "./CtaButton";
 
@@ -31,13 +30,17 @@ export function Hero() {
       <CloudShape className="ref-cloud ref-cloud-3" />
       <CloudShape className="ref-cloud ref-cloud-4" />
       <div className="ref-inner">
-
         <h1 className="ref-title">
           <span className="ref-line-1">{"O Passo a Passo em "}<span className="ref-red ref-underline">{`${OFFER.levelCount} Níveis`}</span></span>
           <span className="ref-line-2">{"Para Seu Filho Sair do"}</span>
           <span className="ref-line-3"><span className="ref-pill">{"Zero à Leitura de Frases"}</span></span>
           <span className="ref-line-4"><Timer className="ref-timer" aria-hidden />{"em "}<span className="ref-red">{`${OFFER.minutesPerDay} Minutos`}</span>{" Por Dia"}</span>
         </h1>
+
+        <p className="ref-description ref-description-desk">
+          {"O "}<strong>Alfabetização Sem Segredo</strong>
+          {` é um método estruturado em PDF com mais de ${OFFER.activityCount} atividades progressivas e visual limpo. Você imprime, senta com a criança e aplica sem improviso, sem telas e sem estresse.`}
+        </p>
 
         <div className="ref-stage">
           <span className="ref-letter ref-letter-a" aria-hidden>A</span>
@@ -58,7 +61,7 @@ export function Hero() {
               <li key={label}><Icon aria-hidden /><span>{label}</span></li>
             ))}
           </ul>
-          <p className="ref-description">
+          <p className="ref-description ref-description-mobile">
             {"O "}<strong>Alfabetização Sem Segredo</strong>
             {` é um método estruturado em PDF com mais de ${OFFER.activityCount} atividades progressivas e visual limpo. Você imprime, senta com a criança e aplica sem improviso, sem telas e sem estresse.`}
           </p>
