@@ -683,8 +683,8 @@
   .ref-stage::before { width: 40em; height: 40em; }
 }
 
-.ref-letter-a { left: -4%; }
-.ref-letter-b { left: -3%; }
+.ref-letter-a { left: -2%; }
+.ref-letter-b { left: -1.5%; }
 
 @media (min-width: 1024px) {
   .ref-letter-a { left: -12%; }
