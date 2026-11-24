@@ -14,7 +14,7 @@ export function Testimonials() {
   const [paused, setPaused] = useState(false);
   const [held, setHeld] = useState(false);
   return (
-    <section className="mt-16" aria-labelledby="testimonials-title">
+    <section className="testimonials-section mt-16" aria-labelledby="testimonials-title">
       <h2 id="testimonials-title" className="text-center text-3xl font-extrabold text-royal-deep md:text-4xl">Quem já aplicou, aprovou</h2>
       <p className="mx-auto mt-4 max-w-2xl text-center text-lg leading-relaxed text-ink">Veja o que dizem mães e professoras que trocaram atividades soltas pelo nosso método:</p>
       <div className="mt-4 flex justify-center">
