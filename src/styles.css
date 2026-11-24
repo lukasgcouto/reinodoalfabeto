@@ -729,7 +729,7 @@
 
 
 .testimonials-section {
-  background: linear-gradient(180deg, color-mix(in oklab, var(--sky) 35%, var(--on-color)) 0%, color-mix(in oklab, var(--sky) 15%, var(--on-color)) 100%);
+  background: #6FD2FC;
   border-radius: 2.5rem;
   padding: 2.5rem 1rem 1rem;
 }
