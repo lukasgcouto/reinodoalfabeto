@@ -6,7 +6,6 @@ import { Guarantee } from "@/components/landing/Guarantee";
 import { Hero } from "@/components/landing/Hero";
 import { Offer } from "@/components/landing/Offer";
 import { Solution } from "@/components/landing/Solution";
-import { StickyCta } from "@/components/landing/StickyCta";
 import { Story } from "@/components/landing/Story";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { OFFER, formatBRL } from "@/lib/offer";
@@ -48,7 +47,6 @@ function Index() {
         <p className="font-display font-bold">Reino do Alfabeto · Alfabetização Sem Segredo</p>
         <p className="mt-1">Produto digital em PDF. Acesso enviado por e-mail e WhatsApp.</p>
       </footer>
-      <StickyCta />
     </main>
   );
 }
