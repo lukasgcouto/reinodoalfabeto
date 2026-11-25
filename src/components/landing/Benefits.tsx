@@ -83,7 +83,7 @@ export function Benefits() {
             </div>
           </div>
           <p className="mx-auto mt-8 max-w-2xl text-center text-lg font-bold text-on-color">
-            Seja em casa ou na sala de aula, a lógica é a mesma: material limpo, progressivo e fácil de aplicar.
+            Seja em casa ou na sala de aula, a lógica é a mesma: material bem ilustrado, progressivo e fácil de aplicar.
           </p>
         </div>
       </div>
