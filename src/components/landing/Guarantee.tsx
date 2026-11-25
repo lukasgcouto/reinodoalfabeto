@@ -10,7 +10,7 @@ export function Guarantee() {
           alt={`Selo de garantia de ${OFFER.guaranteeDays} dias`}
           width={816}
           height={816}
-          loading="lazy"
+          loading="lazy" decoding="async"
           className="mx-auto w-56 animate-float md:w-full"
         />
         <div className="space-y-4 text-lg leading-relaxed text-ink">

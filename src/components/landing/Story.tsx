@@ -1,7 +1,6 @@
 import { Clock } from "lucide-react";
 import { OFFER } from "@/lib/offer";
 import { CloudShape } from "./Decor";
-import { media } from "./media";
 
 export function Story() {
   return (
@@ -10,11 +9,11 @@ export function Story() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
           <div className="relative order-2 md:order-1">
             <img
-              src={media.tela}
+              src="/crianca-tela.webp"
               alt="Mãe cansada no sofá enquanto o filho olha para o tablet"
               width={1024}
               height={1024}
-              loading="lazy"
+              loading="lazy" decoding="async"
               className="-rotate-2 rounded-[2rem] border-[6px] border-on-color shadow-card"
             />
             <div className="absolute -bottom-6 right-4 rotate-3 rounded-3xl bg-cherry px-5 py-3 font-display text-lg font-extrabold text-on-color shadow-[0_5px_0_0_var(--cherry-deep)]">

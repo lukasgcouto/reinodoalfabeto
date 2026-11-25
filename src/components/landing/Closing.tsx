@@ -16,7 +16,7 @@ export function Closing() {
             alt="Mãe orgulhosa ao lado da filha que lê sozinha uma folha com o alfabeto"
             width={1280}
             height={960}
-            loading="lazy"
+            loading="lazy" decoding="async"
             className="rotate-2 rounded-[2rem] border-[6px] border-on-color shadow-toy"
           />
           <div className="space-y-4 text-lg leading-relaxed text-ink">

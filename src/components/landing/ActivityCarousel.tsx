@@ -62,7 +62,7 @@ export function ActivityCarousel() {
           {activities.map((image, index) => (
             <CarouselItem key={image.src} className="basis-[86%] pl-4 sm:basis-[58%] md:basis-[38%] md:pl-6" aria-label={`${index + 1} de ${activities.length}`}>
               <figure className="mx-auto w-full">
-                <img src={image.src} alt={image.alt} width={1050} height={1500} loading="lazy" draggable={false}
+                <img src={image.src} alt={image.alt} width={1050} height={1500} loading="lazy" decoding="async" draggable={false}
                   className="mx-auto aspect-[7/10] w-full select-none object-contain" />
               </figure>
             </CarouselItem>
