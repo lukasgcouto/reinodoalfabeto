@@ -39,7 +39,7 @@ export function Hero() {
         </div>
 
         <div className="ref-action">
-          <CtaButton className="w-full sm:w-auto">Quero destravar a leitura agora</CtaButton>
+          <CtaButton destination="offer" className="w-full sm:w-auto">Quero destravar a leitura agora</CtaButton>
           <ul className="ref-benefits">
             {benefits.map(({ icon: Icon, label }) => (
               <li key={label}><Icon aria-hidden /><span>{label}</span></li>

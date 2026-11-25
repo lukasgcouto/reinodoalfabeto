@@ -34,5 +34,6 @@ use the editor.
 - Landing page sections live in `src/components/landing/`, composed by `src/routes/index.tsx`; styling uses the toy-box tokens/utilities in `src/styles.css`.
 - Testimonials use two equal CSS marquee groups for a seamless loop, with pointer/hover pause and a static scrollable reduced-motion alternative.
 - Activity previews use the shared Embla carousel without autoplay plugins; scoped gallery styles preserve the rest of the page.
+- Pre-offer CTAs explicitly use the shared button's offer destination and the sticky bar links to #oferta; purchase CTAs retain the centralized checkout URL so changing it cannot redirect discovery buttons externally.
 
 - The first screen (`Hero.tsx` + `HeroPromoBar`) faithfully reproduces the user's reference composition; its styles are scoped under `.ref-hero`/`.hero-promo` in `src/styles.css` so other sections stay unchanged.

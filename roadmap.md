@@ -1,4 +1,5 @@
 # Roadmap
+- [x] Ajustar âncora da oferta, botões anteriores e barra fixa; verificar rolagem suave sem mudar os estilos
 - [x] Remover molduras, centralizar as atividades e verificar transições manuais mais rápidas
 - [x] Transformar somente as prévias de atividades em carrossel manual e verificar arraste, setas e indicadores
 - [x] Redesenhar exclusivamente a primeira dobra e comparar as demais seções com a versão original

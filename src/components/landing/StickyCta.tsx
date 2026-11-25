@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { OFFER, formatBRL } from "@/lib/offer";
+import { OFFER } from "@/lib/offer";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
@@ -21,11 +21,11 @@ export function StickyCta() {
     >
       <div className="flex items-center justify-between gap-3">
         <div className="leading-tight text-on-color">
-          <p className="text-xs line-through opacity-80">{formatBRL(OFFER.originalPriceCents)}</p>
-          <p className="font-display text-xl font-extrabold text-sun">{formatBRL(OFFER.priceCents)}</p>
+          <p className="font-display text-xl font-extrabold text-sun">+{OFFER.activityCount} Atividades</p>
+          <p className="text-xs">em {OFFER.levelCount} Níveis</p>
         </div>
         <Button asChild variant="cta" className="h-auto min-w-0 flex-1 px-3 py-2 text-sm tracking-normal">
-          <a href={OFFER.checkoutUrl}>Garantir meu acesso</a>
+          <a href="#oferta">Quero destravar agora</a>
         </Button>
       </div>
     </div>

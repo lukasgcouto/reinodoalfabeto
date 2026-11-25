@@ -110,7 +110,7 @@ export function Solution() {
           <span className="text-cherry">muito mais prazerosa</span>, para a criança e para você.
         </p>
         <div className="mt-8 flex justify-center">
-          <CtaButton />
+          <CtaButton destination="offer" />
         </div>
       </div>
     </section>

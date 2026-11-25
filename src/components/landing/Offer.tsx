@@ -16,7 +16,7 @@ const items = [
 export function Offer() {
   const perActivity = Math.ceil(centsPerActivity());
   return (
-    <section id="oferta" className="relative scroll-mt-4 overflow-hidden bg-sky px-4 pb-40 pt-12 md:pb-48">
+    <section id="oferta" className="relative scroll-mt-6 overflow-hidden bg-sky px-4 pb-40 pt-12 md:pb-48">
       <CloudShape className="absolute -left-12 top-10 w-48 opacity-80" />
       <CloudShape className="absolute -right-10 top-1/3 w-56 opacity-70" />
 

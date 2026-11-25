@@ -7,16 +7,18 @@ export function CtaButton({
   children,
   className,
   pulse = true,
+  destination = "checkout",
 }: {
   children?: React.ReactNode;
   className?: string;
   pulse?: boolean;
+  destination?: "offer" | "checkout";
 }) {
   return (
     <Button asChild variant="cta" size="xl" className={cn("max-w-full min-w-0 tracking-normal", pulse && "animate-pulse-cta", className)}>
-      <a href={OFFER.checkoutUrl}>
+      <a href={destination === "offer" ? "#oferta" : OFFER.checkoutUrl}>
         <span className="min-w-0 whitespace-normal text-center">
-          {children ?? `Garantir meu acesso por ${formatBRL(OFFER.priceCents)}`}
+          {children ?? (destination === "offer" ? "Quero destravar a leitura agora" : `Garantir meu acesso por ${formatBRL(OFFER.priceCents)}`)}
         </span>
         <ArrowRight />
       </a>
