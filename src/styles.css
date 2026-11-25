@@ -736,3 +736,5 @@
 @media (max-width: 1023px) {
   .ref-hero { padding-top: 1.5em; }
 }
+
+.ref-icone-titulo { width: 1.3em; height: auto; flex-shrink: 0; object-fit: contain; }
