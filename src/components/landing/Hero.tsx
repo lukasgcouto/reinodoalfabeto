@@ -1,4 +1,4 @@
-import { CalendarCheck, ShieldCheck, Timer, Zap } from "lucide-react";
+import { CalendarCheck, ShieldCheck, Zap } from "lucide-react";
 import { OFFER } from "@/lib/offer";
 import { CloudShape } from "./Decor";
 import { ProductMockup } from "./ProductMockup";
