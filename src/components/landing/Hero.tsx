@@ -1,5 +1,5 @@
-import { CalendarCheck, Flame, ShieldCheck, Timer, Zap } from "lucide-react";
-import { OFFER, formatBRL } from "@/lib/offer";
+import { CalendarCheck, ShieldCheck, Timer, Zap } from "lucide-react";
+import { OFFER } from "@/lib/offer";
 import { CloudShape } from "./Decor";
 import { ProductMockup } from "./ProductMockup";
 import { CtaButton } from "./CtaButton";
@@ -9,18 +9,6 @@ const benefits = [
   { icon: CalendarCheck, label: "Sem mensalidade" },
   { icon: ShieldCheck, label: `Garantia de ${OFFER.guaranteeDays} dias` },
 ];
-
-export function HeroPromoBar() {
-  return (
-    <div className="hero-promo">
-      <Flame className="hero-promo-flame" aria-hidden />
-      <span>
-        {"Oferta de hoje: de "}<s>{formatBRL(OFFER.originalPriceCents)}</s>{" por apenas "}
-        <strong>{formatBRL(OFFER.priceCents)}</strong>
-      </span>
-    </div>
-  );
-}
 
 export function Hero() {
   return (
