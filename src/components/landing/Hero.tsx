@@ -22,7 +22,7 @@ export function Hero() {
           <span className="ref-line-1">{"O Passo a Passo em "}<span className="ref-red ref-underline">{`${OFFER.levelCount} Níveis`}</span></span>
           <span className="ref-line-2">{"Para Seu Filho Sair do"}</span>
           <span className="ref-line-3"><span className="ref-pill">{"Zero à Leitura de Frases"}</span></span>
-          <span className="ref-line-4"><Timer className="ref-timer" aria-hidden />{"em "}<span className="ref-red">{`${OFFER.minutesPerDay} Minutos`}</span>{" Por Dia"}</span>
+<span className="ref-line-4"><img src="/cronometro.webp" alt="" width={128} height={124} className="ref-icone-titulo" aria-hidden />{"em "}<span className="ref-red">{`${OFFER.minutesPerDay} Minutos`}</span>{" Por Dia"}</span>        
         </h1>
 
         <p className="ref-description ref-description-desk">
