@@ -6,7 +6,7 @@ const testimonials = [
   { name: "Camila R.", role: "Mãe do Davi, 5 anos", quote: "Eu já tinha baixado um pacote com mil folhas da internet, mas era tudo bagunçado e meu filho odiava. Com esse material limpo e dividido por níveis, ele mesmo pede para fazer a folhinha do dia." },
   { name: "Profa. Mariana S.", role: "Alfabetizadora", quote: "Uso em sala de aula com meus alunos com dificuldade. A progressão de letras para sons e sílabas faz total sentido pedagógico e me economiza horas de planejamento." },
   { name: "Fernanda T.", role: "Mãe da Alice, 6 anos", quote: "Em três semanas fazendo 15 minutinhos depois do jantar, minha filha juntou as primeiras sílabas sozinha. Foi a melhor forma que encontrei de tirar ela do tablet sem briga." },
-  { name: "Juliana M.", role: "Mãe do Pedro, 4 anos", quote: "O diferencial é que não tem aquele monte de desenho poluindo a folha. Ele consegue focar exatamente nas letras e eu sei exatamente qual página imprimir no dia seguinte." },
+  { name: "Juliana M.", role: "Mãe do Pedro, 4 anos", quote: "Os outros materiais eram tão simples e sem graça que meu filho perdia o interesse rapidinho. Com esse, ele fica muito mais animado para fazer as atividades!" },
   { name: "Patrícia L.", role: "Mãe do Theo, 7 anos", quote: "Achei que não ia conseguir ensinar por não ser professora, mas o material guia a gente passo a passo. Vale cada centavo, muito superior às apostilas de banca." },
 ];
 

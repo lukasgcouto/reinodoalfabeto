@@ -27,7 +27,7 @@ export function Hero() {
 
         <p className="ref-description ref-description-desk">
           {"O "}<strong>Alfabetização Sem Segredo</strong>
-          {` é um método estruturado em PDF com mais de ${OFFER.activityCount} atividades progressivas e visual limpo. Você imprime, senta com a criança e aplica sem improviso, sem telas e sem estresse.`}
+          {` é um método estruturado em PDF com mais de ${OFFER.activityCount} atividades progressivas e ilustrações de alta qualidade. Você imprime, senta com a criança e aplica sem improviso, sem telas e sem estresse.`}
         </p>
 
         <div className="ref-stage">
@@ -47,7 +47,7 @@ export function Hero() {
           </ul>
           <p className="ref-description ref-description-mobile">
             {"O "}<strong>Alfabetização Sem Segredo</strong>
-            {` é um método estruturado em PDF com mais de ${OFFER.activityCount} atividades progressivas e visual limpo. Você imprime, senta com a criança e aplica sem improviso, sem telas e sem estresse.`}
+            {` é um método estruturado em PDF com mais de ${OFFER.activityCount} atividades progressivas e ilustrações de alta qualidade. Você imprime, senta com a criança e aplica sem improviso, sem telas e sem estresse.`}
           </p>
         </div>
       </div>

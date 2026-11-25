@@ -7,7 +7,7 @@ import { media } from "./media";
 const items = [
   `+${OFFER.activityCount} atividades de alfabetização cuidadosamente selecionadas`,
   "Organização por níveis de evolução, do zero até a leitura de palavras e frases",
-  "Design limpo e de alta qualidade estética, sem poluição visual",
+  "Design limpo, de alta qualidade estética e convidativo",
   "Pronto para imprimir: use em casa ou na sala de aula, quantas vezes quiser",
   "Acesso vitalício: o material é seu para sempre",
   "Acesso imediato, enviado para o seu e-mail e WhatsApp",

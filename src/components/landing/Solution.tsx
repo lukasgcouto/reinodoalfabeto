@@ -13,9 +13,9 @@ const levels = [
 ];
 
 const problems = [
-  "Páginas poluídas, cheias de desenhos, cores e elementos que competem pela atenção da criança",
+  "Páginas em preto e branco, com desenhos simples e ilustrações de baixa qualidade, que tornam as atividades pouco atrativas.",
   "Atividades jogadas sem ordem lógica, que deixam a mãe perdida",
-  "Visual confuso, que cansa os olhos e faz a criança desistir antes de começar",
+  "Visual confuso, que faz a criança desistir antes de começar",
 ];
 
 const solutions = [
