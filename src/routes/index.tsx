@@ -3,6 +3,7 @@ import { Benefits } from "@/components/landing/Benefits";
 import { Closing } from "@/components/landing/Closing";
 import { Faq } from "@/components/landing/Faq";
 import { Guarantee } from "@/components/landing/Guarantee";
+import { Hero } from "@/components/landing/Hero";
 import { Offer } from "@/components/landing/Offer";
 import { Solution } from "@/components/landing/Solution";
 import { StickyCta } from "@/components/landing/StickyCta";
@@ -30,12 +31,11 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="overflow-x-hidden">
-      <HeroPromoBar />
       <Hero />
       <Story />
       <Solution />
       <Benefits />
-         <div className="testimonials-band px-4 pb-16 md:pb-24">
+      <div className="testimonials-band px-4 pb-16 md:pb-24">
         <div className="mx-auto max-w-6xl">
           <Testimonials />
         </div>
