@@ -732,3 +732,7 @@
   background: #6FD2FC;
   display: flow-root;
 }
+
+@media (max-width: 1023px) {
+  .ref-hero { padding-top: 1.5em; }
+}
