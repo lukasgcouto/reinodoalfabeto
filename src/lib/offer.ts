@@ -10,7 +10,7 @@ export const OFFER = {
   levelCount: 5,
   bonuses: [
     {
-      title: "Guia Rápido para Pais Sem Tempo",
+      title: "Plano de Ação para Pais Sem Tempo",
       description: "Como conduzir os 15 minutos diários sem brigas e o que fazer quando a criança errar.",
       originalPriceCents: 2900,
       priceCents: 0,
