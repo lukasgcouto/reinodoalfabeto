@@ -3,7 +3,6 @@ import { Benefits } from "@/components/landing/Benefits";
 import { Closing } from "@/components/landing/Closing";
 import { Faq } from "@/components/landing/Faq";
 import { Guarantee } from "@/components/landing/Guarantee";
-import { Hero, HeroPromoBar } from "@/components/landing/Hero";
 import { Offer } from "@/components/landing/Offer";
 import { Solution } from "@/components/landing/Solution";
 import { StickyCta } from "@/components/landing/StickyCta";
