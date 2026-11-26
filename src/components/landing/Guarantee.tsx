@@ -3,7 +3,7 @@ import { media } from "./media";
 
 export function Guarantee() {
   return (
-    <section className="bg-leaf px-4 py-16 md:py-24">
+    <section className="bg-leaf px-4 pb-16 pt-4 md:pb-24 md:pt-6">
       <div className="mx-auto grid max-w-5xl items-center gap-8 rounded-[2.5rem] bg-card p-7 shadow-[0_8px_0_0_var(--leaf-deep)] md:grid-cols-[280px_1fr] md:p-12">
         <img
           src={media.selo}
