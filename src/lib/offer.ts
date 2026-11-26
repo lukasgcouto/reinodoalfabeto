@@ -23,8 +23,7 @@ export const OFFER = {
     },
   ],
   ageRange: "4 a 8 anos",
-  // Replace with the real payment link (Kiwify, Hotmart, etc.).
-  checkoutUrl: "#oferta",
+  checkoutUrl: "https://payfast.greenn.com.br/9nqv793",
 } as const;
 
 export function formatBRL(cents: number): string {

@@ -17,6 +17,9 @@ describe("offer", () => {
   it("has a 7-day guarantee", () => {
     expect(OFFER.guaranteeDays).toBe(7);
   });
+  it("sends purchase CTAs to the real payment page", () => {
+    expect(OFFER.checkoutUrl).toBe("https://payfast.greenn.com.br/9nqv793");
+  });
   it("organizes the method in five levels", () => {
     expect(OFFER.levelCount).toBe(5);
   });
