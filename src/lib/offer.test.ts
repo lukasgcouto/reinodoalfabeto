@@ -1,12 +1,15 @@
 import { describe, expect, it } from "vitest";
-import { OFFER, centsPerActivity, formatBRL } from "./offer";
+import { OFFER, centsPerActivity, discountPercent, formatBRL } from "./offer";
 
 describe("offer", () => {
   it("sells for R$ 27,00", () => {
     expect(formatBRL(OFFER.priceCents)).toBe("R$ 27,00");
   });
-  it("anchors against R$ 97,00", () => {
-    expect(formatBRL(OFFER.originalPriceCents)).toBe("R$ 97,00");
+  it("anchors against R$ 67,00", () => {
+    expect(formatBRL(OFFER.originalPriceCents)).toBe("R$ 67,00");
+  });
+  it("shows 60% off against the original price", () => {
+    expect(discountPercent()).toBe(60);
   });
   it("includes 200 activities", () => {
     expect(OFFER.activityCount).toBe(200);

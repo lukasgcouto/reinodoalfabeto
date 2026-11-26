@@ -46,6 +46,18 @@ function Index() {
       <footer className="bg-royal-deep px-4 pb-24 pt-8 text-center text-sm text-on-color/80 md:pb-8">
         <p className="font-display font-bold">Reino do Alfabeto · Alfabetização Sem Segredo</p>
         <p className="mt-1">Produto digital em PDF. Acesso enviado por e-mail e WhatsApp.</p>
+        <p className="mt-1">
+          Suporte:{" "}
+          <a
+            href="mailto:reinodoalfabeto@gmail.com"
+            className="font-semibold text-on-color underline decoration-on-color/40 underline-offset-2 hover:decoration-on-color"
+          >
+            reinodoalfabeto@gmail.com
+          </a>
+        </p>
+        <p className="mt-3 text-xs text-on-color/60">
+          © 2026 Reino do Alfabeto. Todos os direitos reservados.
+        </p>
       </footer>
     </main>
   );

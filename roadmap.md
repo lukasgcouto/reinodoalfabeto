@@ -9,5 +9,7 @@
 - [x] Aplicar textos CRO, bônus e revisão mobile/FAQ
 - [x] Preparar e verificar carrossel com os cinco depoimentos reais e autorizados
 - [x] Landing page de alta conversão (Alfabetização Sem Segredo) no visual do kit
-- [ ] Trocar link dos botões de compra pelo link de pagamento (aguardando o usuário)
+- [x] Trocar link dos botões de compra pelo link de pagamento (aguardando o usuário)
+- [x] Corrigir preço "de" para R$ 67,00 e desconto para 60% em toda a página
+- [x] Adicionar e-mail de suporte e direitos autorais no rodapé
 - [x] Primeira dobra desktop (≥1024px) em grid de duas colunas, mobile intacto

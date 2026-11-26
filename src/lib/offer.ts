@@ -4,7 +4,7 @@ export const OFFER = {
   brand: "Reino do Alfabeto",
   activityCount: 200,
   priceCents: 2700,
-  originalPriceCents: 9700,
+  originalPriceCents: 6700,
   guaranteeDays: 7,
   minutesPerDay: 15,
   levelCount: 5,
