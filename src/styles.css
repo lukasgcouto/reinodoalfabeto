@@ -738,3 +738,9 @@
 }
 
 .ref-icone-titulo { width: 1.3em; height: auto; flex-shrink: 0; object-fit: contain; }
+.ref-line-4-text { white-space: nowrap; min-width: 0; }
+.ref-line-1, .ref-line-2, .ref-pill { white-space: normal; }
+@media (max-width: 767px) {
+  .ref-line-1, .ref-line-2, .ref-line-3, .ref-line-4 { font-size: min(1.8em, 6.9vw); }
+  .ref-pill { white-space: nowrap; }
+}
